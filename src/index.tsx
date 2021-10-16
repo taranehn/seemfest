@@ -3,24 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createMuiTheme } from '@material-ui/core/styles';
-
-const theme = createMuiTheme({
-  typography: {
-    fontFamily: [
-      'lalezar',
-    ].join(','),
-  },
-  breakpoints: {
-    values: {
-      xs: 0,
-      sm: 400,
-      md: 800,
-      lg: 1100,
-      xl: 1600,
-    },
-  },
-});
 
 ReactDOM.render(
     <React.StrictMode>
