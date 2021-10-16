@@ -25,3 +25,6 @@ yarn-error.log*
 # work-space
 workspace.code-workspace
 .vscode
+
+#aws
+user_credentials.csv
