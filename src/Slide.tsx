@@ -19,7 +19,7 @@ export default function Item({ image }: ItemProps) {
 
     return (
         <Paper className={classes.root}>
-            <img width="100%"
+            <img width="100%" alt={"slide"}
                 src={image}
             />
         </Paper>

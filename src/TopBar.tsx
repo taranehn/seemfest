@@ -6,6 +6,8 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { makeStyles } from '@material-ui/core/styles';
 import { useHistory } from 'react-router-dom';
+import { useIntl } from 'react-intl';
+import { Grid } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
@@ -17,23 +19,48 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function TopBar() {
+
+export default function ButtonAppBar() {
     const classes = useStyles();
     const history = useHistory();
-
-    const handleClick = () => {
-        history.push("/aboutus");
-    }
+    const intl = useIntl();
 
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
-                <Toolbar className={classes.toolbar} >
-                    <Typography className={classes.typography} variant="h5" component="div" sx={{ flexGrow: 1 }}
-                        onClick={() => { history.push("/")}}>
-                        SEEM | Festival
+                <Toolbar className={classes.toolbar}>
+                    <Typography className={classes.typography} variant="h5" component="div" sx={{ flexShrink: 0 }}
+                        onClick={() => { history.push("/") }}>
+                        {intl.formatMessage({ id: "seem-festival" })}
                     </Typography>
-                    <Button color="inherit" onClick={() => { history.push("/aboutus") }}>About us</Button>
+
+                    <Button color="inherit" onClick={() => { history.push("/aboutus") }} component="div" sx={{ flexShrink: 0 }}>
+                        {intl.formatMessage({ id: "about-us" })}
+                    </Button>
+
+                    <Grid container
+                        direction="row"
+                        justifyContent="flex-end"
+                        alignItems="center">
+                        <Grid item>
+                            <Typography className={classes.typography} variant="h5" component="div"
+                                onClick={() => { history.push("/") }}>
+                                EN
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography className={classes.typography} variant="h5" component="div"
+                                onClick={() => { history.push("/") }}>
+                                |
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography className={classes.typography} variant="h5" component="div"
+                                onClick={() => { history.push("/") }}>
+                                DE
+                            </Typography>
+                        </Grid>
+                    </Grid>
                 </Toolbar>
             </AppBar>
         </Box>

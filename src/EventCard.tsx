@@ -6,8 +6,9 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import { FormattedMessage } from 'react-intl';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   content: {
     backgroundColor: '#D0D0D0',
   },
@@ -22,10 +23,11 @@ const useStyles = makeStyles((theme) => ({
 interface EventCardProps {
   image: string;
   title: string;
-  description: string;
+  description1: string;
+  description2: string;
 }
 
-export default function EventCard({ image, title, description }: EventCardProps) {
+export default function EventCard({ image, title, description1, description2 }: EventCardProps) {
   const classes = useStyles();
 
   return (
@@ -36,17 +38,24 @@ export default function EventCard({ image, title, description }: EventCardProps)
         height="400"
         image={image}
       />
-      <CardContent  className={classes.content} >
+      <CardContent className={classes.content} >
         <Typography color="text.primary" gutterBottom variant="h5" component="div">
           {title}
         </Typography>
         <Typography variant="body2" color="text.primary">
-          {description}
+          {description1}
+        </Typography>
+        <Typography variant="body2" color="text.primary">
+          {description2}
         </Typography>
       </CardContent>
-      <CardActions   className={classes.action}>
-        <Button color="secondary" className={classes.button} size="small">Share</Button>
-        <Button color="secondary" size="small">Learn More</Button>
+      <CardActions className={classes.action}>
+        <Button color="secondary" className={classes.button} size="small">
+          <FormattedMessage id="more" />
+        </Button>
+        <Button color="secondary" size="small">
+          <FormattedMessage id="tickets" />
+        </Button>
       </CardActions>
     </Card>
   );

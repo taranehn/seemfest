@@ -44,7 +44,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <IntlProvider messages={translationEN} locale={lang} defaultLocale={lang}>
         <Router>
-          <TopBar />
+          <TopBar  />
           <Routing />
         </Router>
       </IntlProvider>

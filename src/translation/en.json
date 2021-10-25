@@ -1,11 +1,18 @@
 {
+    "seem-festival": "SEEM | Festival", 
     "about-us": "About us",
-    "events": "Events",
-    "donate": "Donate",
-    "contact-us": "Contact us",
-    "PLAY_READING": "Play Reading",
-    "STORY_READING": "Story Reading",
-    "POEM": "Poeam",
-    "MOVIE": "Movie",
-    "VIRGOOL": "Comma"
+    "tickets": "Tickets",
+    "more": "More",
+    "roya": "Roye Arab",
+    "embryo": "Embryo",
+    "persian-empire": "Persian Empire",
+    "makan": "Makan Ashgvari",
+    "roya-date": "18.12.2021",
+    "embryo-date": "04.12.2021",
+    "makan-date": "21.12.2021",
+    "persian-date": "11.12.2021",
+    "roya-venue": "Einsteinkultur",
+    "embryo-venue": "Import-Export",
+    "makan-venue": "Feirwek-Funkstation",
+    "persian-venue": "MOKA"
 }
