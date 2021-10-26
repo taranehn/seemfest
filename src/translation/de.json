@@ -1,8 +1,8 @@
 {
     "seem-festival": "SEEM | Festival", 
-    "about-us": "About us",
+    "about-us": "Über uns",
     "tickets": "Tickets",
-    "more": "More",
+    "more": "mehr",
     "roya": "Roye Arab",
     "embryo": "Embryo",
     "persian-empire": "Persian Empire",
@@ -14,5 +14,7 @@
     "roya-venue": "Einsteinkultur",
     "embryo-venue": "Import-Export",
     "makan-venue": "Feirwek-Funkstation",
-    "persian-venue": "MOKA"
+    "persian-venue": "MOKA",
+    "de": "DE",
+    "en": "EN"
 }

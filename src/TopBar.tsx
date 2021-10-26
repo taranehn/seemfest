@@ -8,6 +8,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useHistory } from 'react-router-dom';
 import { useIntl } from 'react-intl';
 import { Grid } from '@material-ui/core';
+import { Langs } from './App';
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
@@ -19,8 +20,11 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
+interface TopBarProps {
+    onLangChange: (lang: Langs) => void;
+}
 
-export default function ButtonAppBar() {
+export default function TopBar({ onLangChange }: TopBarProps) {
     const classes = useStyles();
     const history = useHistory();
     const intl = useIntl();
@@ -40,12 +44,13 @@ export default function ButtonAppBar() {
 
                     <Grid container
                         direction="row"
+                        spacing={1}
                         justifyContent="flex-end"
                         alignItems="center">
                         <Grid item>
                             <Typography className={classes.typography} variant="h5" component="div"
-                                onClick={() => { history.push("/") }}>
-                                EN
+                                onClick={() => onLangChange("en")}>
+                                {intl.formatMessage({ id: "en" })}
                             </Typography>
                         </Grid>
                         <Grid item>
@@ -56,8 +61,8 @@ export default function ButtonAppBar() {
                         </Grid>
                         <Grid item>
                             <Typography className={classes.typography} variant="h5" component="div"
-                                onClick={() => { history.push("/") }}>
-                                DE
+                                onClick={() => onLangChange("de")}>
+                                {intl.formatMessage({ id: "de" })}
                             </Typography>
                         </Grid>
                     </Grid>

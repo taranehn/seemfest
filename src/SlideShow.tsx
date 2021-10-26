@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 export default function SideShow() {
     const classes = useStyles();
     return (
-        <Carousel reverseEdgeAnimationDirection stopAutoPlayOnHover timeout={10} interval={2000} className={classes.carousel} animation={"fade"} indicators={false} navButtonsAlwaysVisible={true}>
+        <Carousel reverseEdgeAnimationDirection stopAutoPlayOnHover timeout={10} interval={10000} className={classes.carousel} animation={"fade"} indicators={false} navButtonsAlwaysVisible={true}>
             <Slide image={EmryoHomePage} />
             <Slide image={RoyaHomePage} />
         </Carousel>

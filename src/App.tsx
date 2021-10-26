@@ -4,6 +4,7 @@ import TopBar from './TopBar';
 import { createMuiTheme, ThemeProvider } from '@mui/material';
 import { IntlProvider } from 'react-intl'
 import translationEN from './translation/en.json';
+import translationDE from './translation/de.json';
 import Routing from './Routing';
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -35,16 +36,21 @@ const theme = createMuiTheme({
   },
 });
 
+const messagesConfig = {
+  'de': translationDE,
+  'en': translationEN
+};
+
+export type Langs = "en" | "de";
 
 function App() {
-
-  const [lang, setLang] = React.useState("en")
+  const [lang, setLang] = React.useState<Langs>("de");
 
   return (
     <ThemeProvider theme={theme}>
-      <IntlProvider messages={translationEN} locale={lang} defaultLocale={lang}>
+      <IntlProvider messages={messagesConfig[lang]} locale={lang} defaultLocale={lang}>
         <Router>
-          <TopBar  />
+          <TopBar onLangChange={setLang} />
           <Routing />
         </Router>
       </IntlProvider>
