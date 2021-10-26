@@ -4,13 +4,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import RoyaCard from './images/Roya-1.jpg';
 import PersianEmpireCard from './images/PE1.jpg';
 import EmbryoCard from './images/embryo-card.jpg';
-import MakanCard from './images/makan-card-2.png';
+import MakanCard from './images/makan-card-4.png';
 import { useIntl } from 'react-intl';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        padding: "20px",
-        backgroundColor: '#FF6200'
+        padding: "2px",
     },
 }));
 
@@ -23,7 +22,7 @@ export default function Cards() {
             direction="row"
             justifyContent="center"
             alignItems="center"
-            spacing={3}
+            spacing={1}
             className={classes.root} >
             <Grid item>
                 <EventCard title={intl.formatMessage({ id: "embryo" })} image={EmbryoCard} description1={intl.formatMessage({ id: "embryo-date" })} description2={intl.formatMessage({ id: "embryo-venue" })} />

@@ -7,22 +7,25 @@ const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor: '#FF6200'
     },
+    cards: {
+        width: "100%"
+    }
 }));
 
 export default function Content() {
     const classes = useStyles();
-    
+
     return (
         <Grid container
             direction="column"
             justifyContent="center"
             alignItems="center"
-            spacing={3}
+            spacing={2}
             className={classes.root} >
             <Grid item>
                 <SlideShow />
             </Grid>
-            <Grid item>
+            <Grid className={classes.cards} item>
                 <Cards />
             </Grid>
         </Grid>
