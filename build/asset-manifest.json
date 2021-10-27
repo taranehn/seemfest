@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ed4c0718.chunk.css",
+    "main.js": "/static/js/main.c0543235.chunk.js",
+    "main.js.map": "/static/js/main.c0543235.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fbfa4855.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fbfa4855.js.map",
+    "static/js/2.3f85cebc.chunk.js": "/static/js/2.3f85cebc.chunk.js",
+    "static/js/2.3f85cebc.chunk.js.map": "/static/js/2.3f85cebc.chunk.js.map",
+    "static/js/3.fdce2cbf.chunk.js": "/static/js/3.fdce2cbf.chunk.js",
+    "static/js/3.fdce2cbf.chunk.js.map": "/static/js/3.fdce2cbf.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.ed4c0718.chunk.css.map": "/static/css/main.ed4c0718.chunk.css.map",
+    "static/js/2.3f85cebc.chunk.js.LICENSE.txt": "/static/js/2.3f85cebc.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Lalezar-Regular.469d0e06.woff",
+    "static/media/PE1.28214474.jpg": "/static/media/PE1.28214474.jpg",
+    "static/media/Roya-1.10fe2b12.jpg": "/static/media/Roya-1.10fe2b12.jpg",
+    "static/media/Roya-2.1ccc451e.jpg": "/static/media/Roya-2.1ccc451e.jpg",
+    "static/media/Roya-3.d50a7aa5.jpg": "/static/media/Roya-3.d50a7aa5.jpg",
+    "static/media/Sam-1.d09f689f.jpeg": "/static/media/Sam-1.d09f689f.jpeg",
+    "static/media/Sam-2.eaed2a95.jpg": "/static/media/Sam-2.eaed2a95.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fbfa4855.js",
+    "static/js/2.3f85cebc.chunk.js",
+    "static/css/main.ed4c0718.chunk.css",
+    "static/js/main.c0543235.chunk.js"
+  ]
+}
