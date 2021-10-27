@@ -9,7 +9,7 @@ import { useIntl } from 'react-intl';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        padding: "2px",
+        padding: theme.spacing(1)
     },
 }));
 

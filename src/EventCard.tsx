@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import { FormattedMessage } from 'react-intl';
+import { useIntl } from 'react-intl';
 
 const useStyles = makeStyles((theme) => ({
   content: {
@@ -14,6 +14,11 @@ const useStyles = makeStyles((theme) => ({
   },
   action: {
     backgroundColor: theme.palette.primary.main,
+    display: "flex",
+    justifyContent: "end"
+  },
+  button: {
+    minWidth: 0
   }
 }));
 
@@ -26,6 +31,7 @@ interface EventCardProps {
 
 export default function EventCard({ image, title, description1, description2 }: EventCardProps) {
   const classes = useStyles();
+  const intl = useIntl();
 
   return (
     <Card sx={{ maxWidth: 400 }}>
@@ -47,11 +53,11 @@ export default function EventCard({ image, title, description1, description2 }: 
         </Typography>
       </CardContent>
       <CardActions className={classes.action} >
-        <Button color="secondary" size="small">
-          <FormattedMessage id="more" />
+        <Button className={classes.button} color="secondary" size="small">
+          {intl.formatMessage({ id: "more" })}
         </Button>
-        <Button color="secondary" size="small">
-          <FormattedMessage id="tickets" />
+        <Button className={classes.button} color="secondary" size="small">
+          {intl.formatMessage({ id: "tickets" })}
         </Button>
       </CardActions>
     </Card>
