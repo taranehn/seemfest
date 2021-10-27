@@ -21,10 +21,10 @@ export default function SideShow() {
     const classes = useStyles();
     return (
         <Carousel reverseEdgeAnimationDirection stopAutoPlayOnHover timeout={10} interval={10000} className={classes.carousel} animation={"fade"} indicators={false} navButtonsAlwaysVisible={true}>
-            <Slide image={PEHomePage} />
-            <Slide image={MakanHomePage} />
             <Slide image={EmryoHomePage} />
+            <Slide image={PEHomePage} />
             <Slide image={RoyaHomePage} />
+            <Slide image={MakanHomePage} />
         </Carousel>
     )
 }

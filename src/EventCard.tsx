@@ -42,7 +42,7 @@ export default function EventCard({ image, title, description1, description2 }: 
         image={image}
       />
       <CardContent className={classes.content} >
-        <Typography color="text.primary" gutterBottom variant="h5" component="div">
+        <Typography color="text.secondary" gutterBottom variant="h5" component="div">
           {title}
         </Typography>
         <Typography variant="body2" color="text.primary">

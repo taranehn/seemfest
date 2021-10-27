@@ -5,7 +5,8 @@ import { useIntl } from 'react-intl'
 const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor: theme.palette.secondary.main,
-        padding: theme.spacing(4)
+        padding: theme.spacing(4),
+        height: "100vh"
     }
 }));
 
