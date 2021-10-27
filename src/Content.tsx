@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundColor: '#FF6200'
+        backgroundColor: theme.palette.secondary.main
     },
     cards: {
         width: "100%"

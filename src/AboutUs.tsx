@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundColor: '#FF6200'
+        backgroundColor: theme.palette.secondary.main
     }
 }));
 

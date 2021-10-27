@@ -12,28 +12,37 @@ import { Langs } from './App';
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
-        backgroundColor: '#0D0D0D',
-        color: '#FF6200',
+        backgroundColor: theme.palette.primary.dark,
+        color: theme.palette.secondary.main,
     },
-    typography: {
-        fontFamily: 'lalezar',
+    lang: {
+        "&.MuiButton-text": {
+            color: theme.palette.primary.light,
+        },
+    },
+    selectedLang: {
+        "&.MuiButton-text": {
+            color: theme.palette.secondary.main,
+        },
     }
 }));
 
 interface TopBarProps {
     onLangChange: (lang: Langs) => void;
+    lang: Langs;
 }
 
-export default function TopBar({ onLangChange }: TopBarProps) {
+export default function TopBar({ onLangChange, lang }: TopBarProps) {
     const classes = useStyles();
     const history = useHistory();
     const intl = useIntl();
 
+    console.log(lang === "de")
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
                 <Toolbar className={classes.toolbar}>
-                    <Typography className={classes.typography} variant="h5" component="div" sx={{ flexShrink: 0 }}
+                    <Typography variant="h5" component="div" sx={{ flexShrink: 0 }}
                         onClick={() => { history.push("/") }}>
                         {intl.formatMessage({ id: "seem-festival" })}
                     </Typography>
@@ -44,26 +53,26 @@ export default function TopBar({ onLangChange }: TopBarProps) {
 
                     <Grid container
                         direction="row"
-                        spacing={1}
+                        spacing={0}
                         justifyContent="flex-end"
                         alignItems="center">
                         <Grid item>
-                            <Typography className={classes.typography} variant="h5" component="div"
-                                onClick={() => onLangChange("en")}>
-                                {intl.formatMessage({ id: "en" })}
-                            </Typography>
+                            <Button className={lang === "de" ? classes.selectedLang : classes.lang}
+                                onClick={() => onLangChange("de")} >
+                                {intl.formatMessage({ id: "de" })}
+                            </Button>
                         </Grid>
                         <Grid item>
-                            <Typography className={classes.typography} variant="h5" component="div"
+                            <Typography
                                 onClick={() => { history.push("/") }}>
                                 |
                             </Typography>
                         </Grid>
                         <Grid item>
-                            <Typography className={classes.typography} variant="h5" component="div"
-                                onClick={() => onLangChange("de")}>
-                                {intl.formatMessage({ id: "de" })}
-                            </Typography>
+                            <Button className={lang === "en" ? classes.selectedLang : classes.lang}
+                                onClick={() => onLangChange("en")} >
+                                {intl.formatMessage({ id: "en" })}
+                            </Button>
                         </Grid>
                     </Grid>
                 </Toolbar>

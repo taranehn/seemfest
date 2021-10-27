@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     carousel: {
         padding: 0,
         margin: 0,
-        backgroundColor: '#404040',
+        backgroundColor: theme.palette.primary.dark,
         height: "70vh",
         width: "100vw"
     },
