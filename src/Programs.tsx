@@ -10,7 +10,7 @@ import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
 import { Grid, makeStyles } from '@material-ui/core';
-import { useIntl } from 'react-intl';
+// import { useIntl } from 'react-intl';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -26,7 +26,7 @@ interface ItemProps {
 
 export default function Programs({ image }: ItemProps) {
   const classes = useStyles();
-  const intl = useIntl();
+  // const intl = useIntl();
   const theme = useTheme();
 
   return (
