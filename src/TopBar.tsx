@@ -47,12 +47,12 @@ export default function TopBar({ onLangChange, lang }: TopBarProps) {
                         {intl.formatMessage({ id: "seem-festival" })}
                     </Typography>
 
-                    <Button color="inherit" onClick={() => { history.push("/aboutus") }} component="div" sx={{ flexShrink: 0 }}>
-                        {intl.formatMessage({ id: "about-us" })}
-                    </Button>
-
                     <Button color="inherit" onClick={() => { history.push("/programs") }} component="div" sx={{ flexShrink: 0 }}>
                         {intl.formatMessage({ id: "programs" })}
+                    </Button>
+
+                    <Button color="inherit" onClick={() => { history.push("/aboutus") }} component="div" sx={{ flexShrink: 0 }}>
+                        {intl.formatMessage({ id: "about-us" })}
                     </Button>
 
                     <Grid container

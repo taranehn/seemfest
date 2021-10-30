@@ -1,0 +1,6 @@
+export const EMBRYO = "https://goo.gl/maps/CTDrNsfj7TcNcPDK7"
+export const PERSIAN = "https://goo.gl/maps/VE9aht5FZhG4eRiM8"
+export const ROYA = "https://goo.gl/maps/iY7SpT8ajLhSGK6N9"
+export const MAKAN = "https://goo.gl/maps/9vnUyjJKdkfAwwoJ7"
+export const FESTIVALPASS = "https://goo.gl/maps/9vnUyjJKdkfAwwoJ7"
+export const YALDA = "https://goo.gl/maps/9vnUyjJKdkfAwwoJ7"

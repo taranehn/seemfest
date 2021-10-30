@@ -13,7 +13,7 @@ import EventAvailable from '@mui/icons-material/EventAvailable';
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    border: `0.25px solid ${theme.palette.primary.dark}`,
+    border: `0.25px solid ${theme.palette.primary.light}`,
     borderRadius: 0,
   },
   box: {
@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     minWidth: 1,
     padding: theme.spacing(0.75),
+    color: theme.palette.primary.main,
   },
   icon: {
     padding: 0,
@@ -30,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "100"
   },
   link: {
-    color: theme.palette.primary.dark,
+    color: theme.palette.primary.light,
   },
   action: {
     margin: theme.spacing(0, 1, 1, 0),
@@ -50,9 +51,10 @@ interface ItemProps {
   venue: string;
   price: string;
   linkToAddress: string;
+  linkToTicket: string;
 }
 
-export default function Programs({ image, name, date, time, venue, price, linkToAddress }: ItemProps) {
+export default function Programs({ image, name, date, time, venue, price, linkToAddress, linkToTicket }: ItemProps) {
   const classes = useStyles();
   const intl = useIntl();
 
@@ -90,7 +92,9 @@ export default function Programs({ image, name, date, time, venue, price, linkTo
               <Place sx={{ fontSize: 20 }} />
             </IconButton>
             <Link className={classes.link}
-              href={linkToAddress} underline="hover">
+              href={linkToAddress}
+              target="_blank"
+              underline="hover">
               {venue}
             </Link>
           </Typography>
@@ -102,7 +106,8 @@ export default function Programs({ image, name, date, time, venue, price, linkTo
           </Typography>
         </CardContent>
         <CardActions className={classes.action}>
-          <Button className={classes.button} color="secondary" variant="contained">
+          <Button className={classes.button} color="secondary" variant="contained"
+            href={linkToTicket} target="_blank">
             {intl.formatMessage({ id: "tickets" })}
           </Button>
         </CardActions>

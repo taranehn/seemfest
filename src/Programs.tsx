@@ -4,6 +4,7 @@ import { useIntl } from 'react-intl';
 import RoyaPoster from './images/poster-roya.jpg';
 import ProgramCard from './ProgramCard';
 import { MOKA, FEIERWEK, EINSTEINKULTUR, IMPORTEXPORT } from './const/addresses';
+import { EMBRYO, PERSIAN, ROYA, FESTIVALPASS, MAKAN, YALDA } from './const/tickets';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -39,6 +40,7 @@ export default function Programs() {
             venue={intl.formatMessage({ id: "embryo-venue" })}
             price={intl.formatMessage({ id: "embryo-price" })}
             linkToAddress={IMPORTEXPORT}
+            linkToTicket={EMBRYO}
           />
         </Grid>
         <Grid item>
@@ -50,6 +52,7 @@ export default function Programs() {
             venue={intl.formatMessage({ id: "persian-venue" })}
             price={intl.formatMessage({ id: "persian-price" })}
             linkToAddress={MOKA}
+            linkToTicket={PERSIAN}
           />
         </Grid>
       </Grid >
@@ -68,6 +71,7 @@ export default function Programs() {
             venue={intl.formatMessage({ id: "roya-venue" })}
             price={intl.formatMessage({ id: "roya-price" })}
             linkToAddress={EINSTEINKULTUR}
+            linkToTicket={ROYA}
           />
         </Grid>
         <Grid item>
@@ -79,6 +83,39 @@ export default function Programs() {
             venue={intl.formatMessage({ id: "makan-venue" })}
             price={intl.formatMessage({ id: "makan-price" })}
             linkToAddress={FEIERWEK}
+            linkToTicket={MAKAN}
+          />
+        </Grid>
+      </Grid >
+      <Grid
+        container
+        spacing={0}
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Grid item>
+          <ProgramCard
+            image={RoyaPoster}
+            name={intl.formatMessage({ id: "yalda" })}
+            time={intl.formatMessage({ id: "yalda-time" })}
+            date={intl.formatMessage({ id: "yalda-date" })}
+            venue={intl.formatMessage({ id: "yalda-venue" })}
+            price={intl.formatMessage({ id: "yalda-price" })}
+            linkToAddress={IMPORTEXPORT}
+            linkToTicket={YALDA}
+          />
+        </Grid>
+        <Grid item>
+          <ProgramCard
+            image={RoyaPoster}
+            name={intl.formatMessage({ id: "festival-pass" })}
+            time={intl.formatMessage({ id: "festival-pass-time" })}
+            date={intl.formatMessage({ id: "festival-pass-date" })}
+            venue={"-"}
+            price={intl.formatMessage({ id: "festival-pass-price" })}
+            linkToAddress={IMPORTEXPORT}
+            linkToTicket={FESTIVALPASS}
           />
         </Grid>
       </Grid >

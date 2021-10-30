@@ -16,6 +16,7 @@
     "embryo-venue": "Import-Export",
     "makan-venue": "Feirwek-Funkstation",
     "persian-venue": "MOKA",
+    "yalda-venue": "Feirwek-Funkstation",
     "de": "DE",
     "en": "EN",
     "patogh": "Patogh e.V.",
@@ -26,6 +27,7 @@
     "makan-price": "15 € | Studentenpreis: 11 €",
     "persian-price": "10 € | Studentenpreis: 5 €",
     "yalda-price": "5 € | Studentenpreis: 3 €",
+    "festival-pass-price": "40 € | Studentenpreis: 20 €",
     "price": "Preis: ",
     "address": "Adresse: ",
     "student-price": "Studentenpreis: ",
@@ -38,5 +40,11 @@
     "persian-time": "20:00 | Einlass: 19:00",
     "embryo-time": "20:00 | Einlass: 19:00",
     "makan-time": "20:00 | Einlass: 19:30",
-    "yalda-time": "21:15"
+    "yalda-time": "21:15",
+    "yalda": "Yalda Nacht",
+    "yalda-date": "21.12.2021",
+    "festival-pass": "Festivalpass",
+    "festival-pass-date": "04, 11, 18, 21.12.2021",
+    "festival-pass-time": "20:00",
+    "festival-pass-venue": "Feirwek-Funkstation"
 }

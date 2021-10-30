@@ -5,14 +5,14 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundColor: theme.palette.secondary.main
+        //  backgroundColor: theme.palette.secondary.main
     },
     cards: {
         width: "100%"
     }
 }));
 
-export default function Content() {
+export default function Home() {
     const classes = useStyles();
 
     return (

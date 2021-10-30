@@ -4,13 +4,13 @@ import {
     Route
 } from "react-router-dom";
 import AboutUs from './AboutUs'
-import Content from './Content'
+import Home from './Home'
 import Programs from './Programs'
 
 export default function Routing() {
     return (
         <Switch>
-            <Route path="/" exact  component={Content}/>
+            <Route path="/" exact  component={Home}/>
             <Route path="/aboutus" component={AboutUs} />
             <Route path="/programs" component={Programs} />
         </Switch>

@@ -6,6 +6,7 @@ import PersianEmpireCard from './images/PE1.jpg';
 import EmbryoCard from './images/embryo-card.jpg';
 import MakanCard from './images/makan-card-4.png';
 import { useIntl } from 'react-intl';
+import { EMBRYO, PERSIAN, ROYA, FESTIVALPASS, MAKAN, YALDA } from './const/tickets';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -25,16 +26,32 @@ export default function Cards() {
             spacing={1}
             className={classes.root} >
             <Grid item>
-                <EventCard title={intl.formatMessage({ id: "embryo" })} image={EmbryoCard} description1={intl.formatMessage({ id: "embryo-date" })} description2={intl.formatMessage({ id: "embryo-venue" })} />
+                <EventCard title={intl.formatMessage({ id: "embryo" })}
+                    image={EmbryoCard}
+                    description1={intl.formatMessage({ id: "embryo-date" })}
+                    description2={intl.formatMessage({ id: "embryo-venue" })}
+                    linkToTicket={EMBRYO} />
             </Grid>
             <Grid item>
-                <EventCard title={intl.formatMessage({ id: "persian-empire" })} image={PersianEmpireCard} description1={intl.formatMessage({ id: "persian-date" })} description2={intl.formatMessage({ id: "persian-venue" })} />
+                <EventCard title={intl.formatMessage({ id: "persian-empire" })}
+                    image={PersianEmpireCard}
+                    description1={intl.formatMessage({ id: "persian-date" })}
+                    description2={intl.formatMessage({ id: "persian-venue" })}
+                    linkToTicket={PERSIAN} />
             </Grid>
             <Grid item>
-                <EventCard title={intl.formatMessage({ id: "roya" })} image={RoyaCard} description1={intl.formatMessage({ id: "roya-date" })} description2={intl.formatMessage({ id: "roya-venue" })} />
+                <EventCard title={intl.formatMessage({ id: "roya" })}
+                    image={RoyaCard}
+                    description1={intl.formatMessage({ id: "roya-date" })}
+                    description2={intl.formatMessage({ id: "roya-venue" })}
+                    linkToTicket={ROYA} />
             </Grid>
             <Grid item>
-                <EventCard title={intl.formatMessage({ id: "makan" })} image={MakanCard} description1={intl.formatMessage({ id: "makan-date" })} description2={intl.formatMessage({ id: "makan-venue" })} />
+                <EventCard title={intl.formatMessage({ id: "makan" })}
+                    image={MakanCard}
+                    description1={intl.formatMessage({ id: "makan-date" })}
+                    description2={intl.formatMessage({ id: "makan-venue" })}
+                    linkToTicket={MAKAN} />
             </Grid>
         </Grid>
     );
