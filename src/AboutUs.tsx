@@ -4,7 +4,7 @@ import { useIntl } from 'react-intl'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        backgroundColor: theme.palette.secondary.main,
+        backgroundColor: theme.palette.primary.light,
         padding: theme.spacing(4),
         height: "100vh"
     }
@@ -27,19 +27,19 @@ export default function AboutUs({ image }: ItemProps) {
             alignItems="flex-start"
         >
             <Grid item>
-                <Typography color="textPrimary" gutterBottom variant="h5">
-                    {intl.formatMessage({ id: "patogh" })}
-                </Typography>
-                <Typography color="textPrimary" gutterBottom >
-                    {intl.formatMessage({ id: "patogh-des" })}
-                </Typography>
-            </Grid>
-            <Grid item>
-                <Typography color="textPrimary" gutterBottom variant="h5">
+                <Typography color="textSecondary" gutterBottom variant="h5">
                     {intl.formatMessage({ id: "seem-festival" })}
                 </Typography>
                 <Typography color="textPrimary" gutterBottom >
                     {intl.formatMessage({ id: "seem-des" })}
+                </Typography>
+            </Grid>
+            <Grid item>
+                <Typography color="textSecondary" gutterBottom variant="h5">
+                    {intl.formatMessage({ id: "patogh" })}
+                </Typography>
+                <Typography color="textPrimary" gutterBottom >
+                    {intl.formatMessage({ id: "patogh-des" })}
                 </Typography>
             </Grid>
         </Grid >

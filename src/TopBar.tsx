@@ -51,6 +51,10 @@ export default function TopBar({ onLangChange, lang }: TopBarProps) {
                         {intl.formatMessage({ id: "about-us" })}
                     </Button>
 
+                    <Button color="inherit" onClick={() => { history.push("/events") }} component="div" sx={{ flexShrink: 0 }}>
+                        {intl.formatMessage({ id: "events" })}
+                    </Button>
+
                     <Grid container
                         direction="row"
                         spacing={0}
