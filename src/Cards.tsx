@@ -6,7 +6,7 @@ import PersianEmpireCard from './images/PE1.jpg';
 import EmbryoCard from './images/embryo-card.jpg';
 import MakanCard from './images/makan-card-4.png';
 import { useIntl } from 'react-intl';
-import { EMBRYO, PERSIAN, ROYA, FESTIVALPASS, MAKAN, YALDA } from './const/tickets';
+import { EMBRYO, PERSIAN, ROYA, MAKAN } from './const/tickets';
 
 const useStyles = makeStyles((theme) => ({
     root: {
