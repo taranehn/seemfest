@@ -37,7 +37,6 @@ export default function TopBar({ onLangChange, lang }: TopBarProps) {
     const history = useHistory();
     const intl = useIntl();
 
-    console.log(lang === "de")
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar position="static">
