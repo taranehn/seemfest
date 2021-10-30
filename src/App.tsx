@@ -9,7 +9,7 @@ import Routing from './Routing';
 import { BrowserRouter as Router } from "react-router-dom";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 
-const theme3 = createMuiTheme({
+const theme = createMuiTheme({
   typography: {
     fontFamily: [
       'lalezar',
@@ -28,6 +28,9 @@ const theme3 = createMuiTheme({
       primary: '#0D0D0D',
       secondary:  '#FF6200',
     },
+    background: {
+      default: '#D0D0D0'
+    }
   },
   breakpoints: {
     values: {
@@ -51,8 +54,8 @@ function App() {
   const [lang, setLang] = React.useState<Langs>("de");
 
   return (
-    <MuiThemeProvider theme={theme3}>
-      <ThemeProvider theme={theme3}>
+    <MuiThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
         <CssBaseline />
         <IntlProvider messages={messagesConfig[lang]} locale={lang} defaultLocale={lang}>
           <Router>

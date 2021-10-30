@@ -34,7 +34,7 @@ export default function EventCard({ image, title, description1, description2 }: 
   const intl = useIntl();
 
   return (
-    <Card sx={{ maxWidth: 400 }}>
+    <Card sx={{ maxWidth: 400 }} raised={true}>
       <CardMedia
         component="img"
         alt="green iguana"

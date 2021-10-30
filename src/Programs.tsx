@@ -1,75 +1,87 @@
 import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import SkipNextIcon from '@mui/icons-material/SkipNext';
 import { Grid, makeStyles } from '@material-ui/core';
-// import { useIntl } from 'react-intl';
+import { useIntl } from 'react-intl';
+import RoyaPoster from './images/poster-roya.jpg';
+import ProgramCard from './ProgramCard';
+import { MOKA, FEIERWEK, EINSTEINKULTUR, IMPORTEXPORT } from './const/addresses';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundColor: theme.palette.primary.light,
-    padding: theme.spacing(4),
-    height: "100vh"
+    padding: theme.spacing(2),
   }
 }));
 
-interface ItemProps {
-  image: string;
-}
-
-export default function Programs({ image }: ItemProps) {
+export default function Programs() {
   const classes = useStyles();
-  // const intl = useIntl();
-  const theme = useTheme();
+  const intl = useIntl();
 
   return (
     <Grid className={classes.root}
       container
-      spacing={2}
-      direction="column"
-      justifyContent="flex-start"
-      alignItems="flex-start"
+      spacing={0}
+      direction="row"
+      justifyContent="center"
+      alignItems="center"
     >
-      <Grid item>
-
-      <Card sx={{ display: 'flex' }}>
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <CardContent sx={{ flex: '1 0 auto' }}>
-          <Typography component="div" variant="h5">
-            Live From Space
-          </Typography>
-          <Typography variant="subtitle1" color="text.secondary" component="div">
-            Mac Miller
-          </Typography>
-        </CardContent>
-        <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-          <IconButton aria-label="previous">
-            {theme.direction === 'rtl' ? <SkipNextIcon /> : <SkipPreviousIcon />}
-          </IconButton>
-          <IconButton aria-label="play/pause">
-            <PlayArrowIcon sx={{ height: 38, width: 38 }} />
-          </IconButton>
-          <IconButton aria-label="next">
-            {theme.direction === 'rtl' ? <SkipPreviousIcon /> : <SkipNextIcon />}
-          </IconButton>
-        </Box>
-      </Box>
-      <CardMedia
-        component="img"
-        sx={{ width: 151 }}
-        image="/static/images/cards/live-from-space.jpg"
-        alt="Live from space album cover"
-      />
-    </Card>
-
-      </Grid>
-    </Grid >
+      <Grid
+        container
+        spacing={0}
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <Grid item>
+          <ProgramCard
+            image={RoyaPoster}
+            name={intl.formatMessage({ id: "embryo" })}
+            time={intl.formatMessage({ id: "embryo-time" })}
+            date={intl.formatMessage({ id: "embryo-date" })}
+            venue={intl.formatMessage({ id: "embryo-venue" })}
+            price={intl.formatMessage({ id: "embryo-price" })}
+            linkToAddress={IMPORTEXPORT}
+          />
+        </Grid>
+        <Grid item>
+          <ProgramCard
+            image={RoyaPoster}
+            name={intl.formatMessage({ id: "persian-empire" })}
+            time={intl.formatMessage({ id: "persian-time" })}
+            date={intl.formatMessage({ id: "persian-date" })}
+            venue={intl.formatMessage({ id: "persian-venue" })}
+            price={intl.formatMessage({ id: "persian-price" })}
+            linkToAddress={MOKA}
+          />
+        </Grid>
+      </Grid >
+      <Grid
+        container
+        spacing={0}
+        direction="row"
+        justifyContent="center"
+        alignItems="center">
+        <Grid item>
+          <ProgramCard
+            image={RoyaPoster}
+            name={intl.formatMessage({ id: "roya" })}
+            time={intl.formatMessage({ id: "roya-time" })}
+            date={intl.formatMessage({ id: "roya-date" })}
+            venue={intl.formatMessage({ id: "roya-venue" })}
+            price={intl.formatMessage({ id: "roya-price" })}
+            linkToAddress={EINSTEINKULTUR}
+          />
+        </Grid>
+        <Grid item>
+          <ProgramCard
+            image={RoyaPoster}
+            name={intl.formatMessage({ id: "makan" })}
+            time={intl.formatMessage({ id: "makan-time" })}
+            date={intl.formatMessage({ id: "makan-date" })}
+            venue={intl.formatMessage({ id: "makan-venue" })}
+            price={intl.formatMessage({ id: "makan-price" })}
+            linkToAddress={FEIERWEK}
+          />
+        </Grid>
+      </Grid >
+    </Grid>
   )
 }
