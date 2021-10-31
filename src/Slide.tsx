@@ -6,7 +6,8 @@ const useStyles = makeStyles((theme) => ({
         padding: 0,
         margin: 0,
         height: "75vh",
-        width: "100vw"
+        width: "100vw",
+        backgroundColor: theme.palette.primary.dark,
     }
 }));
 

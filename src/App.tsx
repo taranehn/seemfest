@@ -12,13 +12,13 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 const theme = createMuiTheme({
   typography: {
     fontFamily: [
-      'lalezar',
+      'lalezar', 
     ].join(','),
   },
   palette: {
     primary: {
-      main: '#404040',
-      dark: '#0D0D0D',
+      main: '#1B1B1B',
+      dark: '#1B1B1B',
       light: '#D0D0D0',
     },
     secondary: {
@@ -29,7 +29,7 @@ const theme = createMuiTheme({
       secondary:  '#FF6200',
     },
     background: {
-      default: '#404040'
+      default: '#1B1B1B'
     }
   },
   breakpoints: {

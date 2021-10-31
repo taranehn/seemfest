@@ -3,7 +3,7 @@ import { Grid, makeStyles } from '@material-ui/core';
 import { useIntl } from 'react-intl';
 import RoyaPoster from './images/poster-roya.jpg';
 import ProgramCard from './ProgramCard';
-import { MOKA, FEIERWEK, EINSTEINKULTUR, IMPORTEXPORT } from './const/addresses';
+import { MUCCA, FEIERWEK, EINSTEINKULTUR, IMPORTEXPORT } from './const/addresses';
 import { EMBRYO, PERSIAN, ROYA, FESTIVALPASS, MAKAN, YALDA } from './const/tickets';
 
 const useStyles = makeStyles((theme) => ({
@@ -51,7 +51,7 @@ export default function Programs() {
             date={intl.formatMessage({ id: "persian-date" })}
             venue={intl.formatMessage({ id: "persian-venue" })}
             price={intl.formatMessage({ id: "persian-price" })}
-            linkToAddress={MOKA}
+            linkToAddress={MUCCA}
             linkToTicket={PERSIAN}
           />
         </Grid>
