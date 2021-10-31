@@ -3,9 +3,10 @@ import {
     Switch,
     Route
 } from "react-router-dom";
-import AboutUs from './AboutUs'
-import Home from './Home'
-import Programs from './Programs'
+import AboutUs from './Pages/AboutUs'
+import Home from './Pages/Home'
+import Programs from './Pages/Programs'
+import Artists from './Pages/Artists'
 
 export default function Routing() {
     return (
@@ -13,6 +14,7 @@ export default function Routing() {
             <Route path="/" exact  component={Home}/>
             <Route path="/aboutus" component={AboutUs} />
             <Route path="/programs" component={Programs} />
+            <Route path="/artists" component={Artists} />
         </Switch>
     )
 }

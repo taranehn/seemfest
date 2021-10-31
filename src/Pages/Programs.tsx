@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { Grid, makeStyles } from '@material-ui/core';
 import { useIntl } from 'react-intl';
-import RoyaPoster from './images/poster-roya.jpg';
-import ProgramCard from './ProgramCard';
-import { MUCCA, FEIERWEK, EINSTEINKULTUR, IMPORTEXPORT } from './const/addresses';
-import { EMBRYO, PERSIAN, ROYA, FESTIVALPASS, MAKAN, YALDA } from './const/tickets';
+import RoyaPoster from '../images/poster-roya.jpg';
+import ProgramCard from '../ProgramCard';
+import { MUCCA, FEIERWEK, EINSTEINKULTUR, IMPORTEXPORT } from '../const/addresses';
+import { EMBRYO, PERSIAN, ROYA, FESTIVALPASS, MAKAN, YALDA } from '../const/tickets';
 
 const useStyles = makeStyles((theme) => ({
   root: {
