@@ -10,10 +10,10 @@ import { useIntl } from 'react-intl';
 
 const useStyles = makeStyles((theme) => ({
   content: {
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.primary.light,
   },
   action: {
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.primary.light,
     display: "flex",
     justifyContent: "end"
   },
@@ -46,10 +46,10 @@ export default function EventCard({ image, title, description1, description2, li
         <Typography color="text.secondary" gutterBottom variant="h5" component="div">
           {title}
         </Typography>
-        <Typography variant="body2" color="text.primary">
+        <Typography variant="body2" color="text.disabled">
           {description1}
         </Typography>
-        <Typography variant="body2" color="text.primary">
+        <Typography variant="body2" color="text.disabled">
           {description2}
         </Typography>
       </CardContent>

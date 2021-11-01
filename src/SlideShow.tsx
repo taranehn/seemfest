@@ -13,7 +13,10 @@ const useStyles = makeStyles((theme) => ({
         margin: 0,
         backgroundColor: theme.palette.primary.dark,
         height: "70vh",
-        width: "100vw"
+        width: "100%",
+        [theme.breakpoints.down('md')]: {
+            height: "40vh",
+        },
     },
 }));
 

@@ -19,6 +19,10 @@ const useStyles = makeStyles((theme) => ({
   box: {
     backgroundColor: theme.palette.primary.main,
     borderRadius: 0,
+    width: theme.spacing(40),
+    [theme.breakpoints.down('md')]: {
+      width: "60vw",
+    },
   },
   button: {
     minWidth: 1,
@@ -28,18 +32,25 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     padding: 0,
     paddingRight: theme.spacing(0.5),
-    fontSize: "100"
+    fontSize: "100",
+    color: theme.palette.primary.light,
   },
   link: {
     color: theme.palette.primary.light,
   },
   action: {
-    margin: theme.spacing(0, 1, 1, 0),
+    margin: theme.spacing(0, 1.5, 1.5, 0),
     display: "flex",
     justifyContent: "end"
   },
   content: {
-    padding: theme.spacing(0),
+    padding: theme.spacing(2),
+  },
+  image: {
+    width: theme.spacing(20),
+    [theme.breakpoints.down('md')]: {
+      width: "40vw",
+    },
   }
 }));
 
@@ -64,10 +75,10 @@ export default function Programs({ image, name, date, time, venue, price, linkTo
       elevation={0} square>
       <CardMedia
         component="img"
-        sx={{ width: 200 }}
+        className={classes.image}
         image={image}
       />
-      <Box sx={{ display: 'flex', flexDirection: 'column', width: 300 }}
+      <Box sx={{ display: 'flex', flexDirection: 'column' }}
         borderRadius={0}
         className={classes.box}>
         <CardContent sx={{ flex: '1 0 auto' }} className={classes.content}>
@@ -78,13 +89,15 @@ export default function Programs({ image, name, date, time, venue, price, linkTo
           <Typography variant="subtitle1" component="div">
             <IconButton className={classes.icon} >
               <EventAvailable sx={{ fontSize: 20 }} />
-            </IconButton>   {date}
+            </IconButton>
+            {date}
           </Typography>
 
           <Typography variant="subtitle1" component="div">
             <IconButton className={classes.icon} >
               <AccessTime sx={{ fontSize: 20 }} />
-            </IconButton>   {time}
+            </IconButton>
+            {time}
           </Typography>
 
           <Typography variant="subtitle1" component="div">
@@ -99,10 +112,11 @@ export default function Programs({ image, name, date, time, venue, price, linkTo
             </Link>
           </Typography>
 
-          <Typography variant="subtitle1" component="div">
+          <Typography variant="subtitle1" component="div" noWrap>
             <IconButton className={classes.icon} >
               <Euro sx={{ fontSize: 20 }} />
-            </IconButton>   {price}
+            </IconButton>
+            {price}
           </Typography>
         </CardContent>
         <CardActions className={classes.action}>

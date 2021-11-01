@@ -1,7 +1,7 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import { Langs } from './App';
+import { Langs } from '../App';
 import ToolBarMobile from './ToolBarMobile';
 import ToolBar from './ToolBar';
 

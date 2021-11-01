@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import TopBar from './TopBar';
+import TopBar from './topbar/TopBar';
 import { createMuiTheme, ThemeProvider, CssBaseline } from '@mui/material';
 import { IntlProvider } from 'react-intl'
 import translationEN from './translation/en.json';
@@ -12,7 +12,7 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 const theme = createMuiTheme({
   typography: {
     fontFamily: [
-      'lalezar', 
+      'lalezar',
     ].join(','),
   },
   palette: {
@@ -26,7 +26,8 @@ const theme = createMuiTheme({
     },
     text: {
       primary: '#D0D0D0',
-      secondary:  '#FF6200',
+      secondary: '#FF6200',
+      disabled: '#1B1B1B',
     },
     background: {
       default: '#1B1B1B'

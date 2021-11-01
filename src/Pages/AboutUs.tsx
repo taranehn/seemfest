@@ -4,8 +4,7 @@ import { useIntl } from 'react-intl'
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        padding: theme.spacing(4),
-        height: "100vh"
+        padding: theme.spacing(2, 4),
     }
 }));
 

@@ -2,9 +2,9 @@ import Grid from '@mui/material/Grid';
 import EventCard from './EventCard';
 import { makeStyles } from '@material-ui/core/styles';
 import RoyaCard from './images/Roya-1.jpg';
-import PersianEmpireCard from './images/PE1.jpg';
+import PersianEmpireCard from './images/persian-empire-card-2.png';
 import EmbryoCard from './images/embryo-card.jpg';
-import MakanCard from './images/makan-card-4.png';
+import MakanCard from './images/makan-card-5.png';
 import { useIntl } from 'react-intl';
 import { EMBRYO, PERSIAN, ROYA, MAKAN } from './const/tickets';
 

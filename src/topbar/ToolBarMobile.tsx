@@ -6,26 +6,30 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useHistory } from 'react-router-dom';
 import { useIntl } from 'react-intl';
 import { Drawer, Grid, List, ListItem } from '@material-ui/core';
-import { Langs } from './App';
+import { Langs } from '../App';
 import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
+import PagesList from './PagesList';
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
         backgroundColor: theme.palette.primary.dark,
         color: theme.palette.secondary.main,
-        [theme.breakpoints.up('sm')]: {
+        width: "100%",
+        [theme.breakpoints.up('md')]: {
             "&.MuiToolbar-root": {
                 display: 'none'
             },
         },
     },
     lang: {
+        minWidth: 0,
         "&.MuiButton-text": {
             color: theme.palette.primary.light,
         },
     },
     selectedLang: {
+        minWidth: 0,
         "&.MuiButton-text": {
             color: theme.palette.secondary.main,
         },
@@ -33,10 +37,12 @@ const useStyles = makeStyles((theme) => ({
     item: {
         padding: 0,
         margin: 0,
-        //  maxWidth: '50px',
     },
     button: {
         color: theme.palette.primary.dark,
+    },
+    drawer: {
+        width: '66vw',
     }
 }));
 
@@ -50,22 +56,16 @@ export default function TopBar({ onLangChange, lang }: TopBarProps) {
     const history = useHistory();
     const intl = useIntl();
 
-    const [mobileOpen, setMobileOpen] = React.useState(false);
+    const [isDrawerOpen, setDrawerOpen] = React.useState(false);
 
     const handleDrawerToggle = () => {
-        setMobileOpen(!mobileOpen);
+        setDrawerOpen(!isDrawerOpen);
     };
-
-    const toggleDrawer = (open: boolean) =>
-        (event: React.KeyboardEvent | React.MouseEvent) => {
-            setMobileOpen(!mobileOpen);
-        };
 
     return (
         <Toolbar className={classes.toolbar} >
             <IconButton
                 color="inherit"
-                aria-label="open drawer"
                 edge="start"
                 onClick={handleDrawerToggle}
             >
@@ -79,8 +79,11 @@ export default function TopBar({ onLangChange, lang }: TopBarProps) {
 
             <Drawer
                 anchor={'left'}
-                open={mobileOpen}
-                onClose={toggleDrawer(false)}
+                open={isDrawerOpen}
+                onClose={handleDrawerToggle}
+                classes={{
+                    paper: classes.drawer
+                }}
             >
                 <List>
                     <ListItem>
@@ -108,16 +111,16 @@ export default function TopBar({ onLangChange, lang }: TopBarProps) {
                             </Grid>
                         </Grid>
                     </ListItem>
-                    <ListItem button
-                        className={classes.button}
-                        onClick={() => { history.push("/programs") }}>
-                        {intl.formatMessage({ id: "programs" })}
-                    </ListItem>
-                    <ListItem button
-                        className={classes.button}
-                        onClick={() => { history.push("/aboutus") }}>
-                        {intl.formatMessage({ id: "about-us" })}
-                    </ListItem>
+                    {PagesList.map((item) => {
+                        return <ListItem button
+                            className={classes.button}
+                            onClick={() => {
+                                history.push(item.link);
+                                handleDrawerToggle()
+                            }}>
+                            {intl.formatMessage({ id: item.titleId })}
+                        </ListItem>
+                    })}
                 </List>
             </Drawer>
         </Toolbar >

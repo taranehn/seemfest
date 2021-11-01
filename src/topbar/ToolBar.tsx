@@ -6,30 +6,33 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useHistory } from 'react-router-dom';
 import { useIntl } from 'react-intl';
 import { Grid } from '@material-ui/core';
-import { Langs } from './App';
+import { Langs } from '../App';
+import PagesList from './PagesList';
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
         backgroundColor: theme.palette.primary.dark,
         color: theme.palette.secondary.main,
-        [theme.breakpoints.down('sm')]: {
+        [theme.breakpoints.down('md')]: {
             "&.MuiToolbar-root": {
                 display: 'none'
             },
         },
     },
     lang: {
+        minWidth: 0,
         "&.MuiButton-text": {
             color: theme.palette.primary.light,
         },
     },
     selectedLang: {
+        minWidth: 0,
         "&.MuiButton-text": {
             color: theme.palette.secondary.main,
         },
     },
     button: {
-        margin: theme.spacing(1)
+        margin: theme.spacing(1),
     }
 }));
 
@@ -51,14 +54,15 @@ export default function TopBar({ onLangChange, lang }: TopBarProps) {
                     {intl.formatMessage({ id: "seem-festival" })}
                 </Typography>
             </Button>
-            <Button color="inherit" onClick={() => { history.push("/programs") }} component="div" sx={{ flexShrink: 0 }}
-                className={classes.button}>
-                {intl.formatMessage({ id: "programs" })}
-            </Button>
-            <Button color="inherit" onClick={() => { history.push("/aboutus") }} component="div" sx={{ flexShrink: 0 }}
-                className={classes.button}>
-                {intl.formatMessage({ id: "about-us" })}
-            </Button>
+
+            {PagesList.map((item) => {
+                return <Button color="inherit"
+                    onClick={() => { history.push(item.link) }}
+                    component="div" sx={{ flexShrink: 0 }}
+                    className={classes.button}>
+                    {intl.formatMessage({ id: item.titleId })}
+                </Button>
+            })}
 
             <Grid container
                 direction="row"
