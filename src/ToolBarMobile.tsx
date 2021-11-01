@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     item: {
         padding: 0,
         margin: 0,
-      //  maxWidth: '50px',
+        //  maxWidth: '50px',
     },
     button: {
         color: theme.palette.primary.dark,

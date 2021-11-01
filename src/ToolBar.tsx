@@ -27,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
         "&.MuiButton-text": {
             color: theme.palette.secondary.main,
         },
+    },
+    button: {
+        margin: theme.spacing(1)
     }
 }));
 
@@ -42,16 +45,18 @@ export default function TopBar({ onLangChange, lang }: TopBarProps) {
 
     return (
         <Toolbar className={classes.toolbar}>
-            <Button color="inherit" onClick={() => { history.push("/") }} component="div" sx={{ flexShrink: 0 }}>
+            <Button color="inherit" onClick={() => { history.push("/") }} component="div" sx={{ flexShrink: 0 }}
+                className={classes.button}>
                 <Typography variant="h5" >
                     {intl.formatMessage({ id: "seem-festival" })}
                 </Typography>
             </Button>
-            <Button color="inherit" onClick={() => { history.push("/programs") }} component="div" sx={{ flexShrink: 0 }}>
+            <Button color="inherit" onClick={() => { history.push("/programs") }} component="div" sx={{ flexShrink: 0 }}
+                className={classes.button}>
                 {intl.formatMessage({ id: "programs" })}
             </Button>
-
-            <Button color="inherit" onClick={() => { history.push("/aboutus") }} component="div" sx={{ flexShrink: 0 }}>
+            <Button color="inherit" onClick={() => { history.push("/aboutus") }} component="div" sx={{ flexShrink: 0 }}
+                className={classes.button}>
                 {intl.formatMessage({ id: "about-us" })}
             </Button>
 

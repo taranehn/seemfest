@@ -13,7 +13,7 @@ interface TopBarProps {
 export default function TopBar({ onLangChange, lang }: TopBarProps) {
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="fixed">
+            <AppBar position="sticky">
                 <ToolBarMobile onLangChange={onLangChange} lang={lang} />
                 <ToolBar onLangChange={onLangChange} lang={lang} />
             </AppBar>
