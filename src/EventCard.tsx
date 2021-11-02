@@ -59,7 +59,7 @@ export default function EventCard({ image, title, description1, description2, li
         </Button>
         <Button className={classes.button} color="secondary" size="small"
           href={linkToTicket} target="_blank">
-          {intl.formatMessage({ id: "tickets" })}
+          {intl.formatMessage({ id: "ticket" })}
         </Button>
       </CardActions>
     </Card>

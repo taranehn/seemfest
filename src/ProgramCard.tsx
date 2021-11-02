@@ -122,7 +122,7 @@ export default function Programs({ image, name, date, time, venue, price, linkTo
         <CardActions className={classes.action}>
           <Button className={classes.button} color="secondary" variant="contained"
             href={linkToTicket} target="_blank">
-            {intl.formatMessage({ id: "tickets" })}
+            {intl.formatMessage({ id: "ticket" })}
           </Button>
         </CardActions>
       </Box>
