@@ -1,6 +1,7 @@
-export const EMBRYO = "https://goo.gl/maps/CTDrNsfj7TcNcPDK7"
-export const PERSIAN = "https://goo.gl/maps/VE9aht5FZhG4eRiM8"
-export const ROYA = "https://goo.gl/maps/iY7SpT8ajLhSGK6N9"
-export const MAKAN = "https://goo.gl/maps/9vnUyjJKdkfAwwoJ7"
+export const EMBRYO = "https://www.eventbrite.com/e/embryo-seem-festival-tickets-201505246617"
+export const PERSIAN = "https://www.eventbrite.com/e/persian-empire-seem-festival-tickets-201509780177"
+export const ROYA = "https://www.eventbrite.de/e/roya-arab-with-sam-beklik-seem-festival-tickets-201512588577"
+export const MAKAN = "https://www.eventbrite.com/e/makan-ashgvari-seem-festival-tickets-201514734997"
 export const FESTIVALPASS = "https://goo.gl/maps/9vnUyjJKdkfAwwoJ7"
 export const YALDA = "https://goo.gl/maps/9vnUyjJKdkfAwwoJ7"
+
