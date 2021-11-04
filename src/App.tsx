@@ -1,7 +1,6 @@
 import React from 'react';
-import './App.css';
 import TopBar from './topbar/TopBar';
-import { createMuiTheme, ThemeProvider, CssBaseline } from '@mui/material';
+import { createMuiTheme, CssBaseline, ThemeProvider } from '@mui/material';
 import { IntlProvider } from 'react-intl'
 import translationEN from './translation/en.json';
 import translationDE from './translation/de.json';
@@ -30,6 +29,7 @@ const theme = createMuiTheme({
       disabled: '#1B1B1B',
     },
     background: {
+      paper: '#D0D0D0',
       default: '#1B1B1B'
     }
   },
