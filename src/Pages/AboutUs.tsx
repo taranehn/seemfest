@@ -13,11 +13,11 @@ const useStyles = makeStyles((theme) => ({
     },
     icon: {
         color: theme.palette.secondary.main,
-        padding: theme.spacing(0.5),
+        padding: theme.spacing(0, 0.5, 0.5, 0),
     },
     title: {
         margin: 0,
-        padding: theme.spacing(1, 1, 1, 0),
+        padding: theme.spacing(1, 2, 1, 0),
     }
 }));
 

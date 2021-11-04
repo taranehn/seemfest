@@ -18,7 +18,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "end"
   },
   button: {
-    minWidth: 0
+    minWidth: 0,
+    color: theme.palette.secondary.main,
+    padding: theme.spacing(0, 2),
   }
 }));
 
@@ -54,10 +56,10 @@ export default function EventCard({ image, title, description1, description2, li
         </Typography>
       </CardContent>
       <CardActions className={classes.action} >
-        <Button className={classes.button} color="secondary" size="small">
+        <Button className={classes.button} size="small">
           {intl.formatMessage({ id: "more" })}
         </Button>
-        <Button className={classes.button} color="secondary" size="small"
+        <Button className={classes.button} size="small"
           href={linkToTicket} target="_blank">
           {intl.formatMessage({ id: "ticket" })}
         </Button>
