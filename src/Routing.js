@@ -4,10 +4,10 @@ import {
     Route,
     Redirect
 } from "react-router-dom";
-import AboutUs from './pages/AboutUs'
-import Home from './pages/Home'
-import Programs from './pages/Programs'
-import Artists from './pages/Artists'
+import AboutUs from './pages/AboutUs';
+import Home from './pages/Home';
+import Programs from './pages/Programs';
+import Artists from './pages/Artists';
 
 export default function Routing() {
     return (
