@@ -22,7 +22,7 @@ export default function Persian() {
   const intl = useIntl();
 
   return (
-    <Grid
+    <Grid id="persian"
       container
       direction="row"
       justifyContent="flex-start"
