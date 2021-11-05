@@ -58,7 +58,7 @@ export default function TopBar({ onLangChange, lang }: TopBarProps) {
             {PagesList.map((item) => {
                 return <Button color="inherit"
                     onClick={() => { history.push(item.link) }}
-                    component="div" sx={{ flexShrink: 0 }}
+                    sx={{ flexShrink: 0 }}
                     className={classes.button}>
                     {intl.formatMessage({ id: item.titleId })}
                 </Button>

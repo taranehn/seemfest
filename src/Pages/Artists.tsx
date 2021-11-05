@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Divider, Grid, makeStyles } from '@material-ui/core';
 import Embryo from '../artists/Embryo';
 import Persian from '../artists/Persian';
+import Roya from '../artists/Roya';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,6 +31,10 @@ export default function Artists() {
       </Grid>
       <Grid item>
         <Persian />
+        <Divider className={classes.line} />
+      </Grid>
+      <Grid item>
+        <Roya />
       </Grid>
     </Grid>
   )
