@@ -30,9 +30,10 @@ interface EventCardProps {
   description1: string;
   description2: string;
   linkToTicket: string;
+  linkToArtist: string;
 }
 
-export default function EventCard({ image, title, description1, description2, linkToTicket }: EventCardProps) {
+export default function EventCard({ image, title, description1, description2, linkToTicket, linkToArtist }: EventCardProps) {
   const classes = useStyles();
   const intl = useIntl();
 
@@ -56,7 +57,8 @@ export default function EventCard({ image, title, description1, description2, li
         </Typography>
       </CardContent>
       <CardActions className={classes.action} >
-        <Button className={classes.button} size="small">
+        <Button className={classes.button} size="small"
+          href={linkToArtist}>
           {intl.formatMessage({ id: "more" })}
         </Button>
         <Button className={classes.button} size="small"

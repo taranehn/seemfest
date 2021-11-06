@@ -30,28 +30,32 @@ export default function Cards() {
                     image={EmbryoCard}
                     description1={intl.formatMessage({ id: "embryo-date" })}
                     description2={intl.formatMessage({ id: "embryo-venue" })}
-                    linkToTicket={EMBRYO} />
+                    linkToTicket={EMBRYO}
+                    linkToArtist={'/artists#embryo'} />
             </Grid>
             <Grid item>
                 <EventCard title={intl.formatMessage({ id: "persian-empire" })}
                     image={PersianEmpireCard}
                     description1={intl.formatMessage({ id: "persian-date" })}
                     description2={intl.formatMessage({ id: "persian-venue" })}
-                    linkToTicket={PERSIAN} />
+                    linkToTicket={PERSIAN}
+                    linkToArtist={'/artists#persian-empire'} />
             </Grid>
             <Grid item>
                 <EventCard title={intl.formatMessage({ id: "roya" })}
                     image={RoyaCard}
                     description1={intl.formatMessage({ id: "roya-date" })}
                     description2={intl.formatMessage({ id: "roya-venue" })}
-                    linkToTicket={ROYA} />
+                    linkToTicket={ROYA}
+                    linkToArtist={'/artists#roya'} />
             </Grid>
             <Grid item>
                 <EventCard title={intl.formatMessage({ id: "makan" })}
                     image={MakanCard}
                     description1={intl.formatMessage({ id: "makan-date" })}
                     description2={intl.formatMessage({ id: "makan-venue" })}
-                    linkToTicket={MAKAN} />
+                    linkToTicket={MAKAN}
+                    linkToArtist={'/artists#makan'} />
             </Grid>
         </Grid>
     );
