@@ -3,6 +3,7 @@ import { Divider, Grid, makeStyles } from '@material-ui/core';
 import Embryo from '../artists/Embryo';
 import Persian from '../artists/Persian';
 import Roya from '../artists/Roya';
+import Makan from '../artists/Makan';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,6 +36,10 @@ export default function Artists() {
       </Grid>
       <Grid item>
         <Roya />
+        <Divider className={classes.line} />
+      </Grid>
+      <Grid item>
+        <Makan />
       </Grid>
     </Grid>
   )
