@@ -9,7 +9,7 @@ import { ReactComponent as GeniusUnited } from './logos/Genius-United.svg';
 import { ReactComponent as FeierwerkFunkstation } from './logos/Feierwerk-Funkstation.svg';
 import { ReactComponent as CinemaIran } from './logos/Cinema-Iran.svg';
 import { ReactComponent as PatoghStrock } from './logos/Patogh-Strock.svg';
-import { ReactComponent as AuswaaertigesAmt } from './logos/Auswärtiges-Amt.svg';
+import { ReactComponent as AuswaaertigesAmt } from './logos/Auswaaertiges-Amt.svg';
 import { ReactComponent as MUCCA } from './logos/MUCCA.svg';
 import { ReactComponent as ReplyAG } from './logos/Reply-AG.svg';
 import { ReactComponent as KulturReferat } from './logos/Kultur-Referat.svg';
