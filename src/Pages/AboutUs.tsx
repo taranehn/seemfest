@@ -6,6 +6,7 @@ import Instagram from '@mui/icons-material/Instagram';
 import YouTube from '@mui/icons-material/YouTube';
 import Telegram from '@mui/icons-material/Telegram';
 import { PATOGH_INSTAGRAM, PATOGH_FACEBOOK, PATOGH_YOUTUBE, PATOGH_TELEGRAM, SEEM_INSTAGRAM } from '../const/links';
+import Sponsers from '../Sponsers';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -21,11 +22,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-interface ItemProps {
-    image: string;
-}
-
-export default function AboutUs({ image }: ItemProps) {
+export default function AboutUs() {
     const classes = useStyles();
     const intl = useIntl();
 
@@ -101,11 +98,14 @@ export default function AboutUs({ image }: ItemProps) {
                         </IconButton>
                     </Grid>
                 </Grid>
-
                 <Typography color="textPrimary" gutterBottom >
                     {intl.formatMessage({ id: "patogh-des" })}
                 </Typography>
             </Grid>
+
+            <Grid item>
+                <Sponsers />
+            </Grid >
         </Grid >
     )
 }
