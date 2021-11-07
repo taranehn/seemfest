@@ -115,7 +115,7 @@ export default function Sponsers() {
                                 /*   href={EINSTEINKULTUR} target="_blank" */
                                 >
                                     <SvgIcon className={classes.svg} >
-                                        < GeniusUnited />
+                                        <AuswaaertigesAmt />
                                     </SvgIcon>
                                 </IconButton>
                             </Grid>
@@ -124,7 +124,7 @@ export default function Sponsers() {
                                 /*   href={EINSTEINKULTUR} target="_blank" */
                                 >
                                     <SvgIcon className={classes.svg} >
-                                        <AuswaaertigesAmt />
+                                        < GeniusUnited />
                                     </SvgIcon>
                                 </IconButton>
                             </Grid>
