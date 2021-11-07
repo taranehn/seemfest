@@ -17,7 +17,7 @@ import { ReactComponent as KulturReferat } from './logos/Kultur-Referat.svg';
 const useStyles = makeStyles((theme) => ({
     icon: {
         color: theme.palette.secondary.main,
-        padding: theme.spacing(0, 1, 0, 0),
+        padding: theme.spacing(0, 2, 0, 0),
     },
     title: {
         margin: 0,
@@ -45,81 +45,18 @@ export default function Sponsers() {
             alignItems="flex-start"
         >
             <Grid item>
-                <Typography className={classes.title}
-                    color="textSecondary" gutterBottom variant="h5">
-                    {intl.formatMessage({ id: "collaborators" })}
-                </Typography>
-            </Grid>
-            <Grid item>
                 <Grid
                     container
-                    direction="row"
+                    spacing={2}
+                    direction="column"
                     justifyContent="flex-start"
-                    spacing={0}
-                    alignItems="center"
+                    alignItems="flex-start"
                 >
                     <Grid item>
-                        <IconButton className={classes.icon}
-                        /*   href={EINSTEINKULTUR} target="_blank" */
-                        >
-                            <SvgIcon className={classes.svg} >
-                                <EINSTEINKULTUR />
-                            </SvgIcon>
-                        </IconButton>
-                    </Grid>
-                    <Grid item>
-                        <IconButton className={classes.icon}
-                        /*   href={EINSTEINKULTUR} target="_blank" */
-                        >
-                            <SvgIcon className={classes.svg} >
-                                < ImportExport />
-                            </SvgIcon>
-                        </IconButton>
-                    </Grid>
-                    <Grid item>
-                        <IconButton className={classes.icon}
-                        /*   href={EINSTEINKULTUR} target="_blank" */
-                        >
-                            <SvgIcon className={classes.svg} >
-                                < NorouziLaw />
-                            </SvgIcon>
-                        </IconButton>
-                    </Grid>
-                    <Grid item>
-                        <IconButton className={classes.icon}
-                        /*   href={EINSTEINKULTUR} target="_blank" */
-                        >
-                            <SvgIcon className={classes.svg} >
-                                <GoetheInstitut />
-                            </SvgIcon>
-                        </IconButton>
-                    </Grid>
-                    <Grid item>
-                        <IconButton className={classes.icon}
-                        /*   href={EINSTEINKULTUR} target="_blank" */
-                        >
-                            <SvgIcon className={classes.svg} >
-                                < GeniusUnited />
-                            </SvgIcon>
-                        </IconButton>
-                    </Grid>
-                    <Grid item>
-                        <IconButton className={classes.icon}
-                        /*   href={EINSTEINKULTUR} target="_blank" */
-                        >
-                            <SvgIcon className={classes.svg} >
-                                < FeierwerkFunkstation />
-                            </SvgIcon>
-                        </IconButton>
-                    </Grid>
-                    <Grid item>
-                        <IconButton className={classes.icon}
-                        /*   href={EINSTEINKULTUR} target="_blank" */
-                        >
-                            <SvgIcon className={classes.svg} >
-                                < CinemaIran />
-                            </SvgIcon>
-                        </IconButton>
+                        <Typography className={classes.title}
+                            color="textSecondary" gutterBottom variant="h5">
+                            {intl.formatMessage({ id: "organisation" })}
+                        </Typography>
                     </Grid>
                     <Grid item>
                         <IconButton className={classes.icon}
@@ -130,41 +67,157 @@ export default function Sponsers() {
                             </SvgIcon>
                         </IconButton>
                     </Grid>
+                </Grid>
+            </Grid>
+
+            <Grid item>
+                <Grid
+                    container
+                    spacing={2}
+                    direction="column"
+                    justifyContent="flex-start"
+                    alignItems="flex-start"
+                >
                     <Grid item>
-                        <IconButton className={classes.icon}
-                        /*   href={EINSTEINKULTUR} target="_blank" */
-                        >
-                            <SvgIcon className={classes.svg} >
-                                <AuswaaertigesAmt />
-                            </SvgIcon>
-                        </IconButton>
+                        <Typography className={classes.title}
+                            color="textSecondary" gutterBottom variant="h5">
+                            {intl.formatMessage({ id: "sponsers" })}
+                        </Typography>
                     </Grid>
                     <Grid item>
-                        <IconButton className={classes.icon}
-                        /*   href={EINSTEINKULTUR} target="_blank" */
+                        <Grid
+                            container
+                            direction="row"
+                            justifyContent="flex-start"
+                            spacing={0}
+                            alignItems="center"
                         >
-                            <SvgIcon className={classes.svg} >
-                                < MUCCA />
-                            </SvgIcon>
-                        </IconButton>
+                            <Grid item>
+                                <IconButton className={classes.icon}
+                                /*   href={EINSTEINKULTUR} target="_blank" */
+                                >
+                                    <SvgIcon className={classes.svg} >
+                                        < ReplyAG />
+                                    </SvgIcon>
+                                </IconButton>
+                            </Grid>
+                            <Grid item>
+                                <IconButton className={classes.icon}
+                                /*   href={EINSTEINKULTUR} target="_blank" */
+                                >
+                                    <SvgIcon className={classes.svg} >
+                                        <GoetheInstitut />
+                                    </SvgIcon>
+                                </IconButton>
+                            </Grid>
+                            <Grid item>
+                                <IconButton className={classes.icon}
+                                /*   href={EINSTEINKULTUR} target="_blank" */
+                                >
+                                    <SvgIcon className={classes.svg} >
+                                        < GeniusUnited />
+                                    </SvgIcon>
+                                </IconButton>
+                            </Grid>
+                            <Grid item>
+                                <IconButton className={classes.icon}
+                                /*   href={EINSTEINKULTUR} target="_blank" */
+                                >
+                                    <SvgIcon className={classes.svg} >
+                                        <AuswaaertigesAmt />
+                                    </SvgIcon>
+                                </IconButton>
+                            </Grid>
+                            <Grid item>
+                                <IconButton className={classes.icon}
+                                /*   href={EINSTEINKULTUR} target="_blank" */
+                                >
+                                    <SvgIcon className={classes.svg} >
+                                        < KulturReferat />
+                                    </SvgIcon>
+                                </IconButton>
+                            </Grid>
+                            <Grid item>
+                                <IconButton className={classes.icon}
+                                /*   href={EINSTEINKULTUR} target="_blank" */
+                                >
+                                    <SvgIcon className={classes.svg} >
+                                        < NorouziLaw />
+                                    </SvgIcon>
+                                </IconButton>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid item>
+                <Grid
+                    container
+                    spacing={2}
+                    direction="column"
+                    justifyContent="flex-start"
+                    alignItems="flex-start"
+                >
+                    <Grid item>
+                        <Typography className={classes.title}
+                            color="textSecondary" gutterBottom variant="h5">
+                            {intl.formatMessage({ id: "collaborators" })}
+                        </Typography>
                     </Grid>
                     <Grid item>
-                        <IconButton className={classes.icon}
-                        /*   href={EINSTEINKULTUR} target="_blank" */
+                        <Grid
+                            container
+                            direction="row"
+                            justifyContent="flex-start"
+                            spacing={0}
+                            alignItems="center"
                         >
-                            <SvgIcon className={classes.svg} >
-                                < ReplyAG />
-                            </SvgIcon>
-                        </IconButton>
-                    </Grid>
-                    <Grid item>
-                        <IconButton className={classes.icon}
-                        /*   href={EINSTEINKULTUR} target="_blank" */
-                        >
-                            <SvgIcon className={classes.svg} >
-                                < KulturReferat />
-                            </SvgIcon>
-                        </IconButton>
+                            <Grid item>
+                                <IconButton className={classes.icon}
+                                /*   href={EINSTEINKULTUR} target="_blank" */
+                                >
+                                    <SvgIcon className={classes.svg} >
+                                        <EINSTEINKULTUR />
+                                    </SvgIcon>
+                                </IconButton>
+                            </Grid>
+                            <Grid item>
+                                <IconButton className={classes.icon}
+                                /*   href={EINSTEINKULTUR} target="_blank" */
+                                >
+                                    <SvgIcon className={classes.svg} >
+                                        < ImportExport />
+                                    </SvgIcon>
+                                </IconButton>
+                            </Grid>
+                            <Grid item>
+                                <IconButton className={classes.icon}
+                                /*   href={EINSTEINKULTUR} target="_blank" */
+                                >
+                                    <SvgIcon className={classes.svg} >
+                                        < FeierwerkFunkstation />
+                                    </SvgIcon>
+                                </IconButton>
+                            </Grid>
+                            <Grid item>
+                                <IconButton className={classes.icon}
+                                /*   href={EINSTEINKULTUR} target="_blank" */
+                                >
+                                    <SvgIcon className={classes.svg} >
+                                        < CinemaIran />
+                                    </SvgIcon>
+                                </IconButton>
+                            </Grid>
+                            <Grid item>
+                                <IconButton className={classes.icon}
+                                /*   href={EINSTEINKULTUR} target="_blank" */
+                                >
+                                    <SvgIcon className={classes.svg} >
+                                        < MUCCA />
+                                    </SvgIcon>
+                                </IconButton>
+                            </Grid>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Grid>
