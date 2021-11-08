@@ -72,7 +72,7 @@ export default function Persian() {
         </Grid>
       </Grid>
 
-      <Grid xs={12} md={6} item>
+      <Grid xs={6} md={6} item>
         <YouTube videoId="OlG3JYunMVo" />
       </Grid>
     </Grid>

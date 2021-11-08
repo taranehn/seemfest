@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     lang: {
         minWidth: 0,
         "&.MuiButton-text": {
-            color: theme.palette.primary.light,
+            color: theme.palette.primary.dark,
         },
     },
     selectedLang: {
@@ -35,8 +35,8 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     item: {
-        padding: 0,
-        margin: 0,
+        color: theme.palette.primary.dark,
+        padding:theme.spacing(1),
     },
     button: {
         color: theme.palette.primary.dark,
