@@ -1,10 +1,10 @@
-import * as React from 'react';
-import { Grid, IconButton, makeStyles, Typography } from '@material-ui/core';
-import { useIntl } from 'react-intl';
-import Web from '@mui/icons-material/Web';
-import Instagram from '@mui/icons-material/Instagram';
-import { PERSIAN_INSTAGRAM, PERSIAN_WEBSITE } from '../const/artists';
-import YouTube from 'react-youtube';
+import * as React from "react";
+import { Grid, IconButton, makeStyles, Typography } from "@material-ui/core";
+import { useIntl } from "react-intl";
+import Web from "@mui/icons-material/Web";
+import Instagram from "@mui/icons-material/Instagram";
+import { PERSIAN_INSTAGRAM, PERSIAN_WEBSITE } from "../const/artists";
+import YouTube from "react-youtube";
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -22,7 +22,8 @@ export default function Persian() {
   const intl = useIntl();
 
   return (
-    <Grid id="persian-empire"
+    <Grid
+      id="persian-empire"
       container
       direction="row"
       justifyContent="flex-start"
@@ -45,27 +46,41 @@ export default function Persian() {
             alignItems="center"
           >
             <Grid item>
-              <Typography className={classes.title}
-                color="textSecondary" gutterBottom variant="h5">
+              <Typography
+                className={classes.title}
+                color="textSecondary"
+                gutterBottom
+                variant="h5"
+              >
                 {intl.formatMessage({ id: "persian-empire" })}
               </Typography>
             </Grid>
             <Grid item>
-              <IconButton className={classes.icon}
-                href={PERSIAN_WEBSITE} target="_blank"  >
+              <IconButton
+                className={classes.icon}
+                href={PERSIAN_WEBSITE}
+                target="_blank"
+              >
                 <Web />
               </IconButton>
             </Grid>
             <Grid item>
-              <IconButton className={classes.icon}
-                href={PERSIAN_INSTAGRAM} target="_blank"  >
+              <IconButton
+                className={classes.icon}
+                href={PERSIAN_INSTAGRAM}
+                target="_blank"
+              >
                 <Instagram />
               </IconButton>
             </Grid>
           </Grid>
 
           <Grid item>
-            <Typography color="textPrimary" style={{ whiteSpace: 'pre-line' }} gutterBottom >
+            <Typography
+              color="textPrimary"
+              style={{ whiteSpace: "pre-line" }}
+              gutterBottom
+            >
               {intl.formatMessage({ id: "persian-des" })}
             </Typography>
           </Grid>
@@ -76,6 +91,5 @@ export default function Persian() {
         <YouTube videoId="OlG3JYunMVo" />
       </Grid>
     </Grid>
-
-  )
+  );
 }

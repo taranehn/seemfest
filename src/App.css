@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: 'Lalezar';
+  font-family: "Lalezar";
 }
 
 .App-logo {
@@ -23,7 +23,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  font-family: 'Lalezar';
+  font-family: "Lalezar";
 }
 
 .App-link {

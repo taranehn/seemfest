@@ -1,9 +1,9 @@
-import * as React from 'react';
-import { Divider, Grid, makeStyles } from '@material-ui/core';
-import Embryo from '../artists/Embryo';
-import Persian from '../artists/Persian';
-import Roya from '../artists/Roya';
-import Makan from '../artists/Makan';
+import * as React from "react";
+import { Divider, Grid, makeStyles } from "@material-ui/core";
+import Embryo from "../artists/Embryo";
+import Persian from "../artists/Persian";
+import Roya from "../artists/Roya";
+import Makan from "../artists/Makan";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,15 +14,16 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(2),
   },
   item: {
-    width: 'inherit'
-  }
+    width: "inherit",
+  },
 }));
 
 export default function Artists() {
   const classes = useStyles();
 
   return (
-    <Grid className={classes.root}
+    <Grid
+      className={classes.root}
       container
       spacing={2}
       direction="column"
@@ -45,5 +46,5 @@ export default function Artists() {
         <Makan />
       </Grid>
     </Grid>
-  )
+  );
 }

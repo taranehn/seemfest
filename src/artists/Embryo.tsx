@@ -1,9 +1,9 @@
-import * as React from 'react';
-import { Grid, IconButton, makeStyles, Typography } from '@material-ui/core';
-import { useIntl } from 'react-intl';
-import Web from '@mui/icons-material/Web';
-import { EMBRYO_WEBSITE } from '../const/artists';
-import YouTube from 'react-youtube';
+import * as React from "react";
+import { Grid, IconButton, makeStyles, Typography } from "@material-ui/core";
+import { useIntl } from "react-intl";
+import Web from "@mui/icons-material/Web";
+import { EMBRYO_WEBSITE } from "../const/artists";
+import YouTube from "react-youtube";
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -21,7 +21,8 @@ export default function Embryo() {
   const intl = useIntl();
 
   return (
-    <Grid id="embryo"
+    <Grid
+      id="embryo"
       container
       direction="row"
       justifyContent="flex-start"
@@ -44,21 +45,32 @@ export default function Embryo() {
             alignItems="center"
           >
             <Grid item>
-              <Typography className={classes.title}
-                color="textSecondary" gutterBottom variant="h5">
+              <Typography
+                className={classes.title}
+                color="textSecondary"
+                gutterBottom
+                variant="h5"
+              >
                 {intl.formatMessage({ id: "embryo" })}
               </Typography>
             </Grid>
             <Grid item>
-              <IconButton className={classes.icon}
-                href={EMBRYO_WEBSITE} target="_blank"  >
+              <IconButton
+                className={classes.icon}
+                href={EMBRYO_WEBSITE}
+                target="_blank"
+              >
                 <Web />
               </IconButton>
             </Grid>
           </Grid>
 
           <Grid item>
-            <Typography color="textPrimary" style={{ whiteSpace: 'pre-line' }} gutterBottom >
+            <Typography
+              color="textPrimary"
+              style={{ whiteSpace: "pre-line" }}
+              gutterBottom
+            >
               {intl.formatMessage({ id: "embryo-des" })}
             </Typography>
           </Grid>
@@ -69,6 +81,5 @@ export default function Embryo() {
         <YouTube videoId="EqVASJNerkk" />
       </Grid>
     </Grid>
-
-  )
+  );
 }

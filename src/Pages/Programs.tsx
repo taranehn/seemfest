@@ -1,18 +1,30 @@
-import * as React from 'react';
-import { Grid, makeStyles } from '@material-ui/core';
-import { useIntl } from 'react-intl';
-import RoyaPoster from '../images/poster-roya.jpg';
-import ProgramCard from '../ProgramCard';
-import { MUCCA, FEIERWEK, EINSTEINKULTUR, IMPORTEXPORT } from '../const/addresses';
-import { EMBRYO, PERSIAN, ROYA, FESTIVALPASS, MAKAN, YALDA } from '../const/tickets';
+import * as React from "react";
+import { Grid, makeStyles } from "@material-ui/core";
+import { useIntl } from "react-intl";
+import RoyaPoster from "../images/poster-roya.jpg";
+import ProgramCard from "../ProgramCard";
+import {
+  MUCCA,
+  FEIERWEK,
+  EINSTEINKULTUR,
+  IMPORTEXPORT,
+} from "../const/addresses";
+import {
+  EMBRYO,
+  PERSIAN,
+  ROYA,
+  FESTIVALPASS,
+  MAKAN,
+  YALDA,
+} from "../const/tickets";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: theme.spacing(3),
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down("md")]: {
       padding: theme.spacing(0),
     },
-  }
+  },
 }));
 
 export default function Programs() {
@@ -20,7 +32,8 @@ export default function Programs() {
   const intl = useIntl();
 
   return (
-    <Grid className={classes.root}
+    <Grid
+      className={classes.root}
       container
       spacing={0}
       direction="row"
@@ -58,13 +71,14 @@ export default function Programs() {
             linkToTicket={PERSIAN}
           />
         </Grid>
-      </Grid >
+      </Grid>
       <Grid
         container
         spacing={0}
         direction="row"
         justifyContent="center"
-        alignItems="center">
+        alignItems="center"
+      >
         <Grid item>
           <ProgramCard
             image={RoyaPoster}
@@ -89,7 +103,7 @@ export default function Programs() {
             linkToTicket={MAKAN}
           />
         </Grid>
-      </Grid >
+      </Grid>
       <Grid
         container
         spacing={0}
@@ -121,7 +135,7 @@ export default function Programs() {
             linkToTicket={FESTIVALPASS}
           />
         </Grid>
-      </Grid >
+      </Grid>
     </Grid>
-  )
+  );
 }
