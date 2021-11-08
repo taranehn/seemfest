@@ -10,7 +10,7 @@ import Sponsers from '../Sponsers';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        padding: theme.spacing(2, 4),
+        padding: theme.spacing(3),
     },
     icon: {
         color: theme.palette.secondary.main,

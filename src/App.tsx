@@ -1,6 +1,6 @@
 import React from 'react';
 import TopBar from './topbar/TopBar';
-import { createMuiTheme, CssBaseline, ThemeProvider } from '@mui/material';
+import { Box, createMuiTheme, CssBaseline, ThemeProvider } from '@mui/material';
 import { IntlProvider } from 'react-intl'
 import translationEN from './translation/en.json';
 import translationDE from './translation/de.json';
@@ -61,7 +61,9 @@ function App() {
         <IntlProvider messages={messagesConfig[lang]} locale={lang} defaultLocale={lang}>
           <Router>
             <TopBar lang={lang} onLangChange={setLang} />
-            <Routing />
+            <Box paddingTop={6}>
+              <Routing />
+            </Box>
           </Router>
         </IntlProvider>
       </ThemeProvider>

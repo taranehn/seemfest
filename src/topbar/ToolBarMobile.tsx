@@ -43,7 +43,10 @@ const useStyles = makeStyles((theme) => ({
     },
     drawer: {
         width: '66vw',
-    }
+    },
+    title: {
+        paddingTop: theme.spacing(0.5),
+    },
 }));
 
 interface TopBarProps {
@@ -72,7 +75,7 @@ export default function TopBar({ onLangChange, lang }: TopBarProps) {
                 <MenuIcon />
             </IconButton>
 
-            <Typography variant="h5" component="div" sx={{ flexShrink: 0 }}
+            <Typography variant="h5" component="div" sx={{ flexShrink: 0 }} className={classes.title}
                 onClick={() => { history.push("/") }}>
                 {intl.formatMessage({ id: "seem-festival" })}
             </Typography>

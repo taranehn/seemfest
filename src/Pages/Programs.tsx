@@ -8,7 +8,7 @@ import { EMBRYO, PERSIAN, ROYA, FESTIVALPASS, MAKAN, YALDA } from '../const/tick
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(3),
     [theme.breakpoints.down('md')]: {
       padding: theme.spacing(0),
     },

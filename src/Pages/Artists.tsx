@@ -12,6 +12,9 @@ const useStyles = makeStyles((theme) => ({
   line: {
     backgroundColor: theme.palette.secondary.main,
     margin: theme.spacing(2),
+  },
+  item: {
+    width: 'inherit'
   }
 }));
 
@@ -26,19 +29,19 @@ export default function Artists() {
       justifyContent="flex-start"
       alignItems="flex-start"
     >
-      <Grid item>
+      <Grid className={classes.item} item>
         <Embryo />
         <Divider className={classes.line} />
       </Grid>
-      <Grid item>
+      <Grid className={classes.item} item>
         <Persian />
         <Divider className={classes.line} />
       </Grid>
-      <Grid item>
+      <Grid className={classes.item} item>
         <Roya />
         <Divider className={classes.line} />
       </Grid>
-      <Grid item>
+      <Grid className={classes.item} item>
         <Makan />
       </Grid>
     </Grid>
