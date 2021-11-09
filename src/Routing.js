@@ -4,12 +4,14 @@ import Home from "./Pages/Home";
 import Programs from "./Pages/Programs";
 import Artists from "./Pages/Artists";
 import AboutUs from "./Pages/AboutUs";
+import Impressum from "./Pages/Impressum";
 
 export default function Routing() {
   return (
     <Switch>
       <Route exact path="/aboutus" component={AboutUs} />
       <Route exact path="/programs" component={Programs} />
+      <Route exact path="/impressum" component={Impressum} />
       <Route exact path="/artists" to="/embryo" component={Artists} />
       <Route exact path="/artists" to="/persian-empire" component={Artists} />
       <Route exact path="/artists" to="/roya" component={Artists} />

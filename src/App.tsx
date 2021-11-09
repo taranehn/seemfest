@@ -1,5 +1,6 @@
 import React from "react";
 import TopBar from "./topbar/TopBar";
+import Footer from "./Footer";
 import { Box, createMuiTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { IntlProvider } from "react-intl";
 import translationEN from "./translation/en.json";
@@ -66,6 +67,7 @@ function App() {
             <Box paddingTop={6}>
               <Routing />
             </Box>
+            <Footer />
           </Router>
         </IntlProvider>
       </ThemeProvider>
