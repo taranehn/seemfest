@@ -1,7 +1,7 @@
 import { Grid, IconButton, SvgIcon, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { useIntl } from "react-intl";
-import { ReactComponent as EINSTEINKULTUR } from "./logos/Einstein-Kultur.svg";
+import { ReactComponent as EinsteinKultur } from "./logos/Einstein-Kultur.svg";
 import { ReactComponent as ImportExport } from "./logos/Import-Export.svg";
 import { ReactComponent as NorouziLaw } from "./logos/Norouzi-Law.svg";
 import { ReactComponent as GoetheInstitut } from "./logos/Goethe-Institut.svg";
@@ -10,9 +10,25 @@ import { ReactComponent as FeierwerkFunkstation } from "./logos/Feierwerk-Funkst
 import { ReactComponent as CinemaIran } from "./logos/Cinema-Iran.svg";
 import { ReactComponent as PatoghStrock } from "./logos/Patogh-Strock.svg";
 import { ReactComponent as AuswaaertigesAmt } from "./logos/Auswaaertiges-Amt.svg";
-import { ReactComponent as MUCCA } from "./logos/MUCCA.svg";
+import { ReactComponent as MUCCAICON } from "./logos/MUCCA.svg";
 import { ReactComponent as ReplyAG } from "./logos/Reply-AG.svg";
+import { ReactComponent as Shahed } from "./logos/Shahed.svg";
 import { ReactComponent as KulturReferat } from "./logos/Kultur-Referat.svg";
+import {
+  MUCCA,
+  REPLY,
+  PATOGH,
+  NOROUZI,
+  IMPORTEXPORT,
+  GOETHE,
+  GENIUS,
+  FEIERWEK,
+  EINSTEIN,
+  CINEMAIRAN,
+  AUSWEARTIGESAMT,
+  SHAHED,
+  KULTUR,
+} from "./const/sponsers";
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -29,6 +45,20 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(0, 0, 0.5, 0),
     width: "100px",
     height: "100px",
+  },
+  svgL: {
+    fill: theme.palette.secondary.main,
+    color: theme.palette.secondary.main,
+    margin: theme.spacing(0, 0, 0.5, 0),
+    width: "120px",
+    height: "120px",
+  },
+  svgXL: {
+    fill: theme.palette.secondary.main,
+    color: theme.palette.secondary.main,
+    margin: theme.spacing(0, 0, 0.5, 0),
+    width: "140px",
+    height: "140px",
   },
 }));
 
@@ -63,10 +93,7 @@ export default function Sponsers() {
             </Typography>
           </Grid>
           <Grid item>
-            <IconButton
-              className={classes.icon}
-              /*   href={EINSTEINKULTUR} target="_blank" */
-            >
+            <IconButton className={classes.icon} href={PATOGH} target="_blank">
               <SvgIcon className={classes.svg}>
                 <PatoghStrock />
               </SvgIcon>
@@ -104,9 +131,10 @@ export default function Sponsers() {
               <Grid item>
                 <IconButton
                   className={classes.icon}
-                  /*   href={EINSTEINKULTUR} target="_blank" */
+                  href={REPLY}
+                  target="_blank"
                 >
-                  <SvgIcon className={classes.svg}>
+                  <SvgIcon className={classes.svgL}>
                     <ReplyAG />
                   </SvgIcon>
                 </IconButton>
@@ -114,7 +142,8 @@ export default function Sponsers() {
               <Grid item>
                 <IconButton
                   className={classes.icon}
-                  /*   href={EINSTEINKULTUR} target="_blank" */
+                  href={GOETHE}
+                  target="_blank"
                 >
                   <SvgIcon className={classes.svg}>
                     <GoetheInstitut />
@@ -124,9 +153,10 @@ export default function Sponsers() {
               <Grid item>
                 <IconButton
                   className={classes.icon}
-                  /*   href={EINSTEINKULTUR} target="_blank" */
+                  href={AUSWEARTIGESAMT}
+                  target="_blank"
                 >
-                  <SvgIcon className={classes.svg}>
+                  <SvgIcon className={classes.svgXL}>
                     <AuswaaertigesAmt />
                   </SvgIcon>
                 </IconButton>
@@ -134,7 +164,8 @@ export default function Sponsers() {
               <Grid item>
                 <IconButton
                   className={classes.icon}
-                  /*   href={EINSTEINKULTUR} target="_blank" */
+                  href={GENIUS}
+                  target="_blank"
                 >
                   <SvgIcon className={classes.svg}>
                     <GeniusUnited />
@@ -144,9 +175,10 @@ export default function Sponsers() {
               <Grid item>
                 <IconButton
                   className={classes.icon}
-                  /*   href={EINSTEINKULTUR} target="_blank" */
+                  href={KULTUR}
+                  target="_blank"
                 >
-                  <SvgIcon className={classes.svg}>
+                  <SvgIcon className={classes.svgXL}>
                     <KulturReferat />
                   </SvgIcon>
                 </IconButton>
@@ -154,10 +186,22 @@ export default function Sponsers() {
               <Grid item>
                 <IconButton
                   className={classes.icon}
-                  /*   href={EINSTEINKULTUR} target="_blank" */
+                  href={NOROUZI}
+                  target="_blank"
                 >
                   <SvgIcon className={classes.svg}>
                     <NorouziLaw />
+                  </SvgIcon>
+                </IconButton>
+              </Grid>
+              <Grid item>
+                <IconButton
+                  className={classes.icon}
+                  href={SHAHED}
+                  target="_blank"
+                >
+                  <SvgIcon className={classes.svg}>
+                    <Shahed />
                   </SvgIcon>
                 </IconButton>
               </Grid>
@@ -194,17 +238,19 @@ export default function Sponsers() {
               <Grid item>
                 <IconButton
                   className={classes.icon}
-                  /*   href={EINSTEINKULTUR} target="_blank" */
+                  href={EINSTEIN}
+                  target="_blank"
                 >
-                  <SvgIcon className={classes.svg}>
-                    <EINSTEINKULTUR />
+                  <SvgIcon className={classes.svgL}>
+                    <EinsteinKultur />
                   </SvgIcon>
                 </IconButton>
               </Grid>
               <Grid item>
                 <IconButton
                   className={classes.icon}
-                  /*   href={EINSTEINKULTUR} target="_blank" */
+                  href={IMPORTEXPORT}
+                  target="_blank"
                 >
                   <SvgIcon className={classes.svg}>
                     <ImportExport />
@@ -214,9 +260,10 @@ export default function Sponsers() {
               <Grid item>
                 <IconButton
                   className={classes.icon}
-                  /*   href={EINSTEINKULTUR} target="_blank" */
+                  href={FEIERWEK}
+                  target="_blank"
                 >
-                  <SvgIcon className={classes.svg}>
+                  <SvgIcon className={classes.svgXL}>
                     <FeierwerkFunkstation />
                   </SvgIcon>
                 </IconButton>
@@ -224,7 +271,8 @@ export default function Sponsers() {
               <Grid item>
                 <IconButton
                   className={classes.icon}
-                  /*   href={EINSTEINKULTUR} target="_blank" */
+                  href={CINEMAIRAN}
+                  target="_blank"
                 >
                   <SvgIcon className={classes.svg}>
                     <CinemaIran />
@@ -234,10 +282,11 @@ export default function Sponsers() {
               <Grid item>
                 <IconButton
                   className={classes.icon}
-                  /*   href={EINSTEINKULTUR} target="_blank" */
+                  href={MUCCA}
+                  target="_blank"
                 >
-                  <SvgIcon className={classes.svg}>
-                    <MUCCA />
+                  <SvgIcon className={classes.svgL}>
+                    <MUCCAICON />
                   </SvgIcon>
                 </IconButton>
               </Grid>

@@ -53,7 +53,6 @@ export default function TopBar({ onLangChange, lang }: TopBarProps) {
         onClick={() => {
           history.push("/");
         }}
-        component="div"
         sx={{ flexShrink: 0 }}
         className={classes.button}
       >
@@ -72,7 +71,9 @@ export default function TopBar({ onLangChange, lang }: TopBarProps) {
             sx={{ flexShrink: 0 }}
             className={classes.button}
           >
-            {intl.formatMessage({ id: item.titleId })}
+            <Typography variant="subtitle1">
+              {intl.formatMessage({ id: item.titleId })}
+            </Typography>
           </Button>
         );
       })}
