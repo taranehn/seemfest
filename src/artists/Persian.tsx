@@ -1,9 +1,10 @@
 import * as React from "react";
-import { Grid, IconButton, makeStyles, Typography } from "@material-ui/core";
+import { Grid, IconButton, makeStyles, Typography, SvgIcon } from "@material-ui/core";
 import { useIntl } from "react-intl";
 import Web from "@mui/icons-material/Web";
 import Instagram from "@mui/icons-material/Instagram";
-import { PERSIAN_INSTAGRAM, PERSIAN_WEBSITE } from "../const/artists";
+import { PERSIAN_INSTAGRAM, PERSIAN_WEBSITE, PERSIAN_SOUNDCLOUD } from "../const/artists";
+import { ReactComponent as Soundcloud } from "../icons/soundcloud.svg";
 import YouTube from "react-youtube";
 
 const useStyles = makeStyles((theme) => ({
@@ -14,6 +15,11 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     color: theme.palette.secondary.main,
     padding: theme.spacing(0, 0.5, 0.5, 0),
+  },
+  soundcoud: {
+    padding: theme.spacing(0),
+    width: "25px",
+    height: "25px",
   },
 }));
 
@@ -73,8 +79,18 @@ export default function Persian() {
                 <Instagram />
               </IconButton>
             </Grid>
+            <Grid item>
+              <IconButton
+                className={classes.icon}
+                href={PERSIAN_SOUNDCLOUD}
+                target="_blank"
+              >
+                <SvgIcon className={classes.soundcoud}>
+                  <Soundcloud />
+                </SvgIcon>
+              </IconButton>
+            </Grid>
           </Grid>
-
           <Grid item>
             <Typography
               color="textPrimary"

@@ -1,9 +1,10 @@
 import * as React from "react";
-import { Grid, IconButton, makeStyles, Typography } from "@material-ui/core";
+import { Grid, IconButton, makeStyles, Typography, SvgIcon } from "@material-ui/core";
 import { useIntl } from "react-intl";
 import Web from "@mui/icons-material/Web";
-import { EMBRYO_WEBSITE } from "../const/artists";
+import { EMBRYO_WEBSITE, EMBRYO_SPOTIFY } from "../const/artists";
 import YouTube from "react-youtube";
+import { ReactComponent as Spotify } from "../icons/spotify.svg";
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -13,6 +14,12 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     color: theme.palette.secondary.main,
     padding: theme.spacing(0, 0.5, 0.5, 0),
+  },
+  spotify: {
+    margin: theme.spacing(0.5, 0, 0, 0.25),
+    padding: theme.spacing(0, 0.5, 0.5, 0),
+    width: "25px",
+    height: "25px",
   },
 }));
 
@@ -61,6 +68,17 @@ export default function Embryo() {
                 target="_blank"
               >
                 <Web />
+              </IconButton>
+            </Grid>
+            <Grid item>
+              <IconButton
+                className={classes.icon}
+                href={EMBRYO_SPOTIFY}
+                target="_blank"
+              >
+                <SvgIcon className={classes.spotify}>
+                  <Spotify />
+                </SvgIcon>
               </IconButton>
             </Grid>
           </Grid>

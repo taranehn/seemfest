@@ -12,6 +12,7 @@ import {
   MAKAN_WEBSITE,
   MAKAN_INSTAGRAM,
   MAKAN_SOUNDCOUD,
+  MAKAN_SPOTIFY
 } from "../const/artists";
 import YouTube from "react-youtube";
 import Instagram from "@mui/icons-material/Instagram";
@@ -96,11 +97,10 @@ export default function Persian() {
                 <Instagram />
               </IconButton>
             </Grid>
-
             <Grid item>
               <IconButton
                 className={classes.icon}
-                href={MAKAN_INSTAGRAM}
+                href={MAKAN_SPOTIFY}
                 target="_blank"
               >
                 <SvgIcon className={classes.spotify}>
@@ -120,7 +120,6 @@ export default function Persian() {
               </IconButton>
             </Grid>
           </Grid>
-
           <Grid item>
             <Typography
               color="textPrimary"

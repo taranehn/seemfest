@@ -119,7 +119,7 @@ export default function Programs() {
             date={intl.formatMessage({ id: "yalda-date" })}
             venue={intl.formatMessage({ id: "yalda-venue" })}
             price={intl.formatMessage({ id: "yalda-price" })}
-            linkToAddress={IMPORTEXPORT}
+            linkToAddress={FEIERWEK}
             linkToTicket={YALDA}
           />
         </Grid>
