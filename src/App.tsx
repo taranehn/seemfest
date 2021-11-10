@@ -67,8 +67,8 @@ function App() {
             <Box paddingTop={6}>
               <Routing />
             </Box>
-            <Footer />
           </Router>
+          <Footer />
         </IntlProvider>
       </ThemeProvider>
     </MuiThemeProvider>

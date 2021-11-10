@@ -1,6 +1,7 @@
 export const EMBRYO_WEBSITE = "https://www.embryo.de/";
 export const EMBRYO_FACEBOOK = "https://www.facebook.com/embryo2000";
-export const EMBRYO_SPOTIFY = "https://open.spotify.com/artist/71TXox3zeu8QPFAiv07Qf4?si=B6U3DwYzTLWzl29PF4gKtg";
+export const EMBRYO_SPOTIFY =
+  "https://open.spotify.com/artist/71TXox3zeu8QPFAiv07Qf4?si=B6U3DwYzTLWzl29PF4gKtg";
 export const PERSIAN_WEBSITE = "https://persianempire-music.com/";
 export const PERSIAN_SOUNDCLOUD = "https://soundcloud.com/perserreich";
 export const PERSIAN_INSTAGRAM =
@@ -12,4 +13,5 @@ export const SAM_WEBSITE = "https://www.sambeklik.com/";
 export const MAKAN_WEBSITE = "http://makanashgvari.com/";
 export const MAKAN_INSTAGRAM = "https://www.instagram.com/makanashgvari/";
 export const MAKAN_SOUNDCOUD = "https://soundcloud.com/makan-ashgvari";
-export const MAKAN_SPOTIFY = "https://open.spotify.com/artist/5FDMz6BT1oz2FfllrulL6z?si=w-s__I7xQOGBPY1TmB7OzQ";
+export const MAKAN_SPOTIFY =
+  "https://open.spotify.com/artist/5FDMz6BT1oz2FfllrulL6z?si=w-s__I7xQOGBPY1TmB7OzQ";

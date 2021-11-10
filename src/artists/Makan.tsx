@@ -12,7 +12,7 @@ import {
   MAKAN_WEBSITE,
   MAKAN_INSTAGRAM,
   MAKAN_SOUNDCOUD,
-  MAKAN_SPOTIFY
+  MAKAN_SPOTIFY,
 } from "../const/artists";
 import YouTube from "react-youtube";
 import Instagram from "@mui/icons-material/Instagram";

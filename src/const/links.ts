@@ -5,3 +5,4 @@ export const PATOGH_YOUTUBE =
   "https://www.youtube.com/channel/UCUrqUa9MYHcuxbFUCXuIMVg";
 export const PATOGH_TELEGRAM = "https://t.me/PatoghMunich";
 export const SEEM_INSTAGRAM = "https://www.instagram.com/seemfest/";
+export const PATOGH_WEBSITE = "https://www.patoghmunich.com/";

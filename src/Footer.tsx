@@ -1,34 +1,54 @@
-import { Button, styled, Typography } from "@mui/material";
+import * as React from "react";
+import CssBaseline from "@mui/material/CssBaseline";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
+import { Button, Grid } from "@mui/material";
 import { useIntl } from "react-intl";
+import { PATOGH_WEBSITE } from "./const/links";
 
-const FOOTER_HEIGHT = 30;
-const FOOTER_TEXT = `Copyright ©${new Date().getFullYear()} Patogh e.V.`;
-
-export default function Footer() {
+export default function Footer2() {
   const intl = useIntl();
 
   return (
-    <FooterWrapper>
-      <FooterText color="textSecondary">{FOOTER_TEXT}</FooterText>
-      <Button size="small" href={"/impressum"}>
-        {intl.formatMessage({ id: "impressum" })}
-      </Button>
-    </FooterWrapper>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        position: "sticky",
+      }}
+    >
+      <CssBaseline />
+      <Box
+        component="footer"
+        sx={{
+          py: 1,
+          px: 2,
+          mt: "auto",
+          backgroundColor: (theme) => theme.palette.primary.light,
+        }}
+      >
+        <Grid
+          container
+          direction="row"
+          columnSpacing={5}
+          spacing={2}
+          justifyContent="space-between"
+          alignItems="center"
+        >
+          <Typography variant="body2" color="text.secondary">
+            {"Copyright © "}
+            <Link color="inherit" href={PATOGH_WEBSITE}>
+              {intl.formatMessage({ id: "patogh" })}
+            </Link>{" "}
+            {new Date().getFullYear()}
+            {"."}
+          </Typography>
+          <Button size="small" href={"/impressum"}>
+            {intl.formatMessage({ id: "impressum" })}
+          </Button>
+        </Grid>
+      </Box>
+    </Box>
   );
 }
-
-const FooterWrapper = styled("div")(
-  ({ theme }) => `
-    flex: 1;
-    display: flex;
-    justify-content: left;
-    minHeight: ${FOOTER_HEIGHT};
-    padding: 5px;
-    padding-left: 10px;
-`
-);
-
-const FooterText = styled(Typography)`
-  word-spacing: 0.1rem;
-  padding-right: 20px;
-`;

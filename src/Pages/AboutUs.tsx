@@ -56,7 +56,7 @@ export default function AboutUs() {
               gutterBottom
               variant="h5"
             >
-              {intl.formatMessage({ id: "seem-festival" })}
+              {intl.formatMessage({ id: "the-festival" })}
             </Typography>
           </Grid>
           <Grid item>

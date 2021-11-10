@@ -1,5 +1,11 @@
 import * as React from "react";
-import { Grid, IconButton, makeStyles, Typography, SvgIcon } from "@material-ui/core";
+import {
+  Grid,
+  IconButton,
+  makeStyles,
+  Typography,
+  SvgIcon,
+} from "@material-ui/core";
 import { useIntl } from "react-intl";
 import Web from "@mui/icons-material/Web";
 import { EMBRYO_WEBSITE, EMBRYO_SPOTIFY } from "../const/artists";

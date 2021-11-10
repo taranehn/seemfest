@@ -1,9 +1,19 @@
 import * as React from "react";
-import { Grid, IconButton, makeStyles, Typography, SvgIcon } from "@material-ui/core";
+import {
+  Grid,
+  IconButton,
+  makeStyles,
+  Typography,
+  SvgIcon,
+} from "@material-ui/core";
 import { useIntl } from "react-intl";
 import Web from "@mui/icons-material/Web";
 import Instagram from "@mui/icons-material/Instagram";
-import { PERSIAN_INSTAGRAM, PERSIAN_WEBSITE, PERSIAN_SOUNDCLOUD } from "../const/artists";
+import {
+  PERSIAN_INSTAGRAM,
+  PERSIAN_WEBSITE,
+  PERSIAN_SOUNDCLOUD,
+} from "../const/artists";
 import { ReactComponent as Soundcloud } from "../icons/soundcloud.svg";
 import YouTube from "react-youtube";
 
