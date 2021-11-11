@@ -49,10 +49,7 @@ export default function Impressum() {
       </Grid>
       <Grid item>
         <Typography color="textPrimary" gutterBottom>
-          die Webseite seemfest.de und deren Untersetie sind die offizielle
-          Webseite des SEEM|Festivals. Der Hauptverasntalter und
-          Hauptverantworter des Festivals ist der Verein „Studentischer
-          Kulturtreff der Iraner in München- Patogh e.V.“
+          die Webseite seemfest.de und deren Untersetie sind die offizielle Webseite des SEEM|Festivals. Der Hauptverasntalter und Hauptverantworter des Festivals ist der Verein „Studentischer Kulturtreff der Iraner in München- Patogh e.V.“
         </Typography>
       </Grid>
       <Grid item>
@@ -67,7 +64,7 @@ export default function Impressum() {
       </Grid>
       <Grid item>
         <Typography color="textPrimary" gutterBottom>
-          Studentischer Kulturtreff der Iraner in München- Patogh e.V.“ <br />
+          Studentischer Kulturtreff der Iraner in München- Patogh e.V. <br />
           c/o: Soheil Ziaee
           <br />
           Rupprechtstrasse 4<br />

@@ -6,9 +6,18 @@ import Link from "@mui/material/Link";
 import { Button, Grid } from "@mui/material";
 import { useIntl } from "react-intl";
 import { PATOGH_WEBSITE } from "./const/links";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  button: {
+    margin: theme.spacing(0),
+    padding: theme.spacing(0),
+  },
+}));
 
 export default function Footer2() {
   const intl = useIntl();
+  const classes = useStyles();
 
   return (
     <Box
@@ -44,8 +53,10 @@ export default function Footer2() {
             {new Date().getFullYear()}
             {"."}
           </Typography>
-          <Button size="small" href={"/impressum"}>
-            {intl.formatMessage({ id: "impressum" })}
+          <Button size="small" href={"/impressum"} className={classes.button}>
+            <Typography variant="body2" color="text.disabled">
+              {intl.formatMessage({ id: "impressum" })}
+            </Typography>
           </Button>
         </Grid>
       </Box>

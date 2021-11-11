@@ -22,6 +22,12 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.main,
     padding: theme.spacing(0, 2),
   },
+  card: {
+    height: theme.spacing(50),
+    [theme.breakpoints.down("md")]: {
+      height: theme.spacing(35),
+    },
+  }
 }));
 
 interface EventCardProps {
@@ -49,7 +55,7 @@ export default function EventCard({
       <CardMedia
         component="img"
         alt="green iguana"
-        height="400"
+        className={classes.card}
         image={image}
       />
       <CardContent className={classes.content}>

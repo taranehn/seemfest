@@ -1,7 +1,11 @@
 import * as React from "react";
 import { Grid, makeStyles } from "@material-ui/core";
 import { useIntl } from "react-intl";
-import RoyaPoster from "../images/poster-roya.jpg";
+import RoyaPoster from "../images/roya-poster.jpg";
+import MakanPoster from "../images/makan-poster.jpg";
+import ElectroPoster from "../images/electro-poster.jpg";
+import EmbryoPoster from "../images/embryo-poster.jpg";
+import PersianPoster from "../images/persian-poster.jpg";
 import ProgramCard from "../ProgramCard";
 import {
   MUCCA,
@@ -49,7 +53,7 @@ export default function Programs() {
       >
         <Grid item>
           <ProgramCard
-            image={RoyaPoster}
+            image={EmbryoPoster}
             name={intl.formatMessage({ id: "embryo" })}
             time={intl.formatMessage({ id: "embryo-time" })}
             date={intl.formatMessage({ id: "embryo-date" })}
@@ -61,8 +65,8 @@ export default function Programs() {
         </Grid>
         <Grid item>
           <ProgramCard
-            image={RoyaPoster}
-            name={intl.formatMessage({ id: "persian-empire" })}
+            image={PersianPoster}
+            name={ intl.formatMessage({ id: "persian-empire" })  }
             time={intl.formatMessage({ id: "persian-time" })}
             date={intl.formatMessage({ id: "persian-date" })}
             venue={intl.formatMessage({ id: "persian-venue" })}
@@ -93,7 +97,7 @@ export default function Programs() {
         </Grid>
         <Grid item>
           <ProgramCard
-            image={RoyaPoster}
+            image={MakanPoster}
             name={intl.formatMessage({ id: "makan" })}
             time={intl.formatMessage({ id: "makan-time" })}
             date={intl.formatMessage({ id: "makan-date" })}
@@ -113,7 +117,7 @@ export default function Programs() {
       >
         <Grid item>
           <ProgramCard
-            image={RoyaPoster}
+            image={MakanPoster}
             name={intl.formatMessage({ id: "yalda" })}
             time={intl.formatMessage({ id: "yalda-time" })}
             date={intl.formatMessage({ id: "yalda-date" })}
@@ -125,7 +129,7 @@ export default function Programs() {
         </Grid>
         <Grid item>
           <ProgramCard
-            image={RoyaPoster}
+            image={ElectroPoster}
             name={intl.formatMessage({ id: "festival-pass" })}
             time={intl.formatMessage({ id: "festival-pass-time" })}
             date={intl.formatMessage({ id: "festival-pass-date" })}

@@ -2,20 +2,20 @@ import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { makeStyles } from "@material-ui/core/styles";
 import Slide from "./Slide";
-import EmryoHomePage from "./images/home-page-embryo-5.jpg";
-import RoyaHomePage from "./images/home-page-roya-5.jpg";
-import PEHomePage from "./images/home-page-PE-5.jpg";
-import MakanHomePage from "./images/home-page-makan-5.jpg";
+import EmryoHomePage from "./images/embryo-banner.jpg";
+import RoyaHomePage from "./images/roya-banner.jpg";
+import PEHomePage from "./images/makan-banner.jpg";
+import MakanHomePage from "./images/electro-banner.jpg";
 
 const useStyles = makeStyles((theme) => ({
   carousel: {
     padding: 0,
     margin: 0,
     backgroundColor: theme.palette.primary.dark,
-    height: "70vh",
+    height: "35vh",
     width: "100%",
     [theme.breakpoints.down("md")]: {
-      height: "40vh",
+      height: "10vh",
     },
   },
 }));
@@ -27,11 +27,11 @@ export default function SideShow() {
       reverseEdgeAnimationDirection
       stopAutoPlayOnHover
       timeout={10}
-      interval={10000}
+      interval={7500}
       className={classes.carousel}
       animation={"fade"}
       indicators={false}
-      navButtonsAlwaysVisible={true}
+      navButtonsAlwaysVisible={false}
     >
       <Slide image={EmryoHomePage} />
       <Slide image={PEHomePage} />

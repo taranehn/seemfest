@@ -31,8 +31,6 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   button: {
-    minWidth: 1,
-    padding: theme.spacing(0.75),
     color: theme.palette.primary.main,
   },
   icon: {
@@ -85,70 +83,68 @@ export default function Programs({
   const intl = useIntl();
 
   return (
-    <Card
-      className={classes.card}
-      sx={{ display: "flex" }}
-      elevation={0}
-      square
-    >
-      <CardMedia component="img" className={classes.image} image={image} />
-      <Box
-        sx={{ display: "flex", flexDirection: "column" }}
-        borderRadius={0}
-        className={classes.box}
+    <React.Fragment>
+      <Card
+        className={classes.card}
+        sx={{ display: "flex" }}
+        elevation={0}
+        square
       >
-        <CardContent sx={{ flex: "1 0 auto" }} className={classes.content}>
-          <Typography color="text.secondary" component="div" variant="h5">
-            {name}
-          </Typography>
+        <CardMedia component="img" className={classes.image} image={image} />
+        <Box className={classes.box} >
+          <CardContent sx={{ flex: "1 0 auto" }} className={classes.content}>
+            <Typography color="text.secondary" component="div" variant="h5">
+              {name}
+            </Typography>
 
-          <Typography variant="subtitle1" component="div">
-            <IconButton className={classes.icon}>
-              <EventAvailable sx={{ fontSize: 20 }} />
-            </IconButton>
-            {date}
-          </Typography>
+            <Typography variant="subtitle1" component="div">
+              <IconButton className={classes.icon}>
+                <EventAvailable sx={{ fontSize: 20 }} />
+              </IconButton>
+              {date}
+            </Typography>
 
-          <Typography variant="subtitle1" component="div">
-            <IconButton className={classes.icon}>
-              <AccessTime sx={{ fontSize: 20 }} />
-            </IconButton>
-            {time}
-          </Typography>
+            <Typography variant="subtitle1" component="div">
+              <IconButton className={classes.icon}>
+                <AccessTime sx={{ fontSize: 20 }} />
+              </IconButton>
+              {time}
+            </Typography>
 
-          <Typography variant="subtitle1" component="div">
-            <IconButton className={classes.icon}>
-              <Place sx={{ fontSize: 20 }} />
-            </IconButton>
-            <Link
-              className={classes.link}
-              href={linkToAddress}
+            <Typography variant="subtitle1" component="div">
+              <IconButton className={classes.icon}>
+                <Place sx={{ fontSize: 20 }} />
+              </IconButton>
+              <Link
+                className={classes.link}
+                href={linkToAddress}
+                target="_blank"
+                underline="hover"
+              >
+                {venue}
+              </Link>
+            </Typography>
+
+            <Typography variant="subtitle1" component="div" noWrap>
+              <IconButton className={classes.icon}>
+                <Euro sx={{ fontSize: 20 }} />
+              </IconButton>
+              {price}
+            </Typography>
+          </CardContent>
+          <CardActions className={classes.action}>
+            <Button
+              className={classes.button}
+              color="secondary"
+              variant="contained"
+              href={linkToTicket}
               target="_blank"
-              underline="hover"
             >
-              {venue}
-            </Link>
-          </Typography>
-
-          <Typography variant="subtitle1" component="div" noWrap>
-            <IconButton className={classes.icon}>
-              <Euro sx={{ fontSize: 20 }} />
-            </IconButton>
-            {price}
-          </Typography>
-        </CardContent>
-        <CardActions className={classes.action}>
-          <Button
-            className={classes.button}
-            color="secondary"
-            variant="contained"
-            href={linkToTicket}
-            target="_blank"
-          >
-            {intl.formatMessage({ id: "ticket" })}
-          </Button>
-        </CardActions>
-      </Box>
-    </Card>
+              {intl.formatMessage({ id: "ticket" })}
+            </Button>
+          </CardActions>
+        </Box>
+      </Card>
+    </React.Fragment>
   );
 }
