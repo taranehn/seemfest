@@ -16,6 +16,7 @@ export default function Routing() {
       <Route exact path="/artists" to="/persian-empire" component={Artists} />
       <Route exact path="/artists" to="/roya" component={Artists} />
       <Route exact path="/artists" to="/makan" component={Artists} />
+      <Route exact path="/artists" to="/peyman" component={Artists} />
       <Route exact path="/" component={Home} />
       <Redirect from="/*" to="/" />
     </Switch>

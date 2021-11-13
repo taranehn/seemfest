@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Persian() {
+export default function Makan() {
   const classes = useStyles();
   const intl = useIntl();
 

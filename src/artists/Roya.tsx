@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Persian() {
+export default function Roya() {
   const classes = useStyles();
   const intl = useIntl();
 

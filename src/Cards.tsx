@@ -1,10 +1,11 @@
 import Grid from "@mui/material/Grid";
-import EventCard from "./EventCard";
+import EventCard from "./ArtistCard";
 import { makeStyles } from "@material-ui/core/styles";
-import RoyaCard from "./images/Roya-1.jpg";
-import PersianEmpireCard from "./images/persian-empire-card-2.png";
-import EmbryoCard from "./images/embryo-card.jpg";
-import MakanCard from "./images/makan-card-5.png";
+import RoyaCard from "./images/roya.jpg";
+import PersianEmpireCard from "./images/persian.jpg";
+import EmbryoCard from "./images/embryo.jpg";
+import MakanCard from "./images/makan.jpg";
+import PeymanCard from "./images/peyman.jpg";
 import { useIntl } from "react-intl";
 import { EMBRYO, PERSIAN, ROYA, MAKAN } from "./const/tickets";
 
@@ -45,6 +46,16 @@ export default function Cards() {
           description2={intl.formatMessage({ id: "persian-venue" })}
           linkToTicket={PERSIAN}
           linkToArtist={"/artists#persian-empire"}
+        />
+      </Grid>
+      <Grid item>
+        <EventCard
+          title={intl.formatMessage({ id: "peyman" })}
+          image={PeymanCard}
+          description1={intl.formatMessage({ id: "persian-date" })}
+          description2={intl.formatMessage({ id: "persian-venue" })}
+          linkToTicket={PERSIAN}
+          linkToArtist={"/artists#peyman"}
         />
       </Grid>
       <Grid item>

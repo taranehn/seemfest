@@ -4,6 +4,7 @@ import Embryo from "../artists/Embryo";
 import Persian from "../artists/Persian";
 import Roya from "../artists/Roya";
 import Makan from "../artists/Makan";
+import Peyman from "../artists/Peyman";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,6 +45,10 @@ export default function Artists() {
       </Grid>
       <Grid className={classes.item} item>
         <Makan />
+        <Divider className={classes.line} />
+      </Grid>
+      <Grid className={classes.item} item>
+        <Peyman />
       </Grid>
     </Grid>
   );
