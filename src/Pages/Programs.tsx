@@ -21,6 +21,7 @@ import {
   MAKAN,
   YALDA,
 } from "../const/tickets";
+import FestivalPass from "../FestivalPass"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -66,7 +67,7 @@ export default function Programs() {
         <Grid item>
           <ProgramCard
             image={PersianPoster}
-            name={ intl.formatMessage({ id: "electro-nacht-names" })  }
+            name={intl.formatMessage({ id: "electro-nacht-names" })}
             time={intl.formatMessage({ id: "persian-time" })}
             date={intl.formatMessage({ id: "persian-date" })}
             venue={intl.formatMessage({ id: "persian-venue" })}
@@ -139,6 +140,15 @@ export default function Programs() {
             linkToTicket={FESTIVALPASS}
           />
         </Grid>
+      </Grid>
+      <Grid
+        container
+        spacing={0}
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <FestivalPass />
       </Grid>
     </Grid>
   );

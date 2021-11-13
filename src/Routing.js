@@ -11,6 +11,7 @@ export default function Routing() {
     <Switch>
       <Route exact path="/aboutus" component={AboutUs} />
       <Route exact path="/programs" component={Programs} />
+      <Route exact path="/programs" to="/festivalpass" component={Programs} />
       <Route exact path="/impressum" component={Impressum} />
       <Route exact path="/artists" to="/embryo" component={Artists} />
       <Route exact path="/artists" to="/persian-empire" component={Artists} />
