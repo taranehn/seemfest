@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   box: {
     backgroundColor: theme.palette.primary.main,
     borderRadius: 0,
-    width: theme.spacing(40),
+    width: theme.spacing(50),
     [theme.breakpoints.down("md")]: {
       width: "60vw",
     },
@@ -125,7 +125,7 @@ export default function Programs({
               </Link>
             </Typography>
 
-            <Typography variant="subtitle1" component="div" noWrap>
+            <Typography variant="subtitle1" component="div" >
               <IconButton className={classes.icon}>
                 <Euro sx={{ fontSize: 20 }} />
               </IconButton>
