@@ -66,7 +66,7 @@ export default function Programs() {
         <Grid item>
           <ProgramCard
             image={PersianPoster}
-            name={ intl.formatMessage({ id: "persian-empire" })  }
+            name={ intl.formatMessage({ id: "electro-nacht-names" })  }
             time={intl.formatMessage({ id: "persian-time" })}
             date={intl.formatMessage({ id: "persian-date" })}
             venue={intl.formatMessage({ id: "persian-venue" })}

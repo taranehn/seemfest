@@ -33,11 +33,13 @@ const useStyles = makeStyles((theme) => ({
   button: {
     color: theme.palette.primary.main,
   },
-  icon: {
+  iconbutton: {
     padding: 0,
     paddingRight: theme.spacing(0.5),
-    fontSize: "100",
     color: theme.palette.primary.light,
+  },
+  icon: {
+    fontSize: theme.spacing(2.5),
   },
   link: {
     color: theme.palette.primary.light,
@@ -98,22 +100,22 @@ export default function Programs({
             </Typography>
 
             <Typography variant="subtitle1" component="div">
-              <IconButton className={classes.icon}>
-                <EventAvailable sx={{ fontSize: 20 }} />
+              <IconButton className={classes.iconbutton}>
+                <EventAvailable className={classes.icon} />
               </IconButton>
               {date}
             </Typography>
 
             <Typography variant="subtitle1" component="div">
-              <IconButton className={classes.icon}>
-                <AccessTime sx={{ fontSize: 20 }} />
+              <IconButton className={classes.iconbutton}>
+                <AccessTime className={classes.icon} />
               </IconButton>
               {time}
             </Typography>
 
             <Typography variant="subtitle1" component="div">
-              <IconButton className={classes.icon}>
-                <Place sx={{ fontSize: 20 }} />
+              <IconButton className={classes.iconbutton}>
+                <Place className={classes.icon} />
               </IconButton>
               <Link
                 className={classes.link}
@@ -126,8 +128,8 @@ export default function Programs({
             </Typography>
 
             <Typography variant="subtitle1" component="div" >
-              <IconButton className={classes.icon}>
-                <Euro sx={{ fontSize: 20 }} />
+              <IconButton className={classes.iconbutton}>
+                <Euro className={classes.icon} />
               </IconButton>
               {price}
             </Typography>
