@@ -15,6 +15,7 @@ export const MAKAN_INSTAGRAM = "https://www.instagram.com/makanashgvari/";
 export const MAKAN_SOUNDCOUD = "https://soundcloud.com/makan-ashgvari";
 export const MAKAN_SPOTIFY =
   "https://open.spotify.com/artist/5FDMz6BT1oz2FfllrulL6z?si=w-s__I7xQOGBPY1TmB7OzQ";
-  export const PEYMAN_SPOTIFY = "https://open.spotify.com/artist/6G8trVKRkLIs2SHsmq0jcY?si=cH2Cd4bMSW2SVNj7ouZyfQ"
-  export const PEYMAN_INSTAGRAM = "https://www.instagram.com/runningpine/";
-  export const PEYMAN_SOUNDCOUD = "https://soundcloud.com/runningpine";
+export const PEYMAN_SPOTIFY =
+  "https://open.spotify.com/artist/6G8trVKRkLIs2SHsmq0jcY?si=cH2Cd4bMSW2SVNj7ouZyfQ";
+export const PEYMAN_INSTAGRAM = "https://www.instagram.com/runningpine/";
+export const PEYMAN_SOUNDCOUD = "https://soundcloud.com/runningpine";

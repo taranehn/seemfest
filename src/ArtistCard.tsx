@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("md")]: {
       height: theme.spacing(35),
     },
-  }
+  },
 }));
 
 interface ArtistCardProps {

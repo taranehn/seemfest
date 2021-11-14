@@ -41,7 +41,11 @@ export default function FestivalPass() {
         </Typography>
       </Grid>
       <Grid item>
-        <Typography color="textPrimary" gutterBottom>
+        <Typography
+          color="textPrimary"
+          style={{ whiteSpace: "pre-line" }}
+          gutterBottom
+        >
           {intl.formatMessage({ id: "festival-pass-des" })}
         </Typography>
       </Grid>

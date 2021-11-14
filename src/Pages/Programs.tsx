@@ -21,7 +21,7 @@ import {
   MAKAN,
   YALDA,
 } from "../const/tickets";
-import FestivalPass from "../FestivalPass"
+import FestivalPass from "../FestivalPass";
 
 const useStyles = makeStyles((theme) => ({
   root: {

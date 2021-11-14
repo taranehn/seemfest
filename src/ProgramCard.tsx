@@ -93,7 +93,7 @@ export default function Programs({
         square
       >
         <CardMedia component="img" className={classes.image} image={image} />
-        <Box className={classes.box} >
+        <Box className={classes.box}>
           <CardContent sx={{ flex: "1 0 auto" }} className={classes.content}>
             <Typography color="text.secondary" component="div" variant="h5">
               {name}
@@ -127,7 +127,7 @@ export default function Programs({
               </Link>
             </Typography>
 
-            <Typography variant="subtitle1" component="div" >
+            <Typography variant="subtitle1" component="div">
               <IconButton className={classes.iconbutton}>
                 <Euro className={classes.icon} />
               </IconButton>
