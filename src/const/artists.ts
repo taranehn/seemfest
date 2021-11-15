@@ -19,3 +19,5 @@ export const PEYMAN_SPOTIFY =
   "https://open.spotify.com/artist/6G8trVKRkLIs2SHsmq0jcY?si=cH2Cd4bMSW2SVNj7ouZyfQ";
 export const PEYMAN_INSTAGRAM = "https://www.instagram.com/runningpine/";
 export const PEYMAN_SOUNDCOUD = "https://soundcloud.com/runningpine";
+export const SAM_INSTAGRAM = "https://www.instagram.com/sambeklik/";
+export const SAM_TWITTER = "https://twitter.com/sambeklik";

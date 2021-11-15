@@ -3,21 +3,14 @@ import {
   Grid,
   IconButton,
   makeStyles,
-  SvgIcon,
   Typography,
 } from "@material-ui/core";
 import { useIntl } from "react-intl";
 import Web from "@mui/icons-material/Web";
-import {
-  MAKAN_WEBSITE,
-  MAKAN_INSTAGRAM,
-  MAKAN_SOUNDCOUD,
-  MAKAN_SPOTIFY,
-} from "../const/artists";
+import Twitter from "@mui/icons-material/Twitter";
+import { SAM_INSTAGRAM, SAM_WEBSITE, SAM_TWITTER } from "../const/artists";
 import YouTube from "react-youtube";
-import Instagram from "@mui/icons-material/Instagram";
-import { ReactComponent as Soundcloud } from "../icons/soundcloud.svg";
-import { ReactComponent as Spotify } from "../icons/spotify.svg";
+import { Instagram } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
   title: {
@@ -28,26 +21,22 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.main,
     padding: theme.spacing(0, 0.5, 0.5, 0),
   },
-  spotify: {
+  svg: {
+    fill: theme.palette.secondary.main,
     margin: theme.spacing(0.5, 0, 0, 0.25),
     padding: theme.spacing(0, 0.5, 0.5, 0),
     width: "25px",
     height: "25px",
   },
-  soundcoud: {
-    padding: theme.spacing(0),
-    width: "25px",
-    height: "25px",
-  },
 }));
 
-export default function Makan() {
+export default function Sam() {
   const classes = useStyles();
   const intl = useIntl();
 
   return (
     <Grid
-      id="makan"
+      id="sam"
       container
       direction="row"
       justifyContent="flex-start"
@@ -76,13 +65,13 @@ export default function Makan() {
                 gutterBottom
                 variant="h5"
               >
-                {intl.formatMessage({ id: "makan" })}
+                {intl.formatMessage({ id: "sam" })}
               </Typography>
             </Grid>
             <Grid item>
               <IconButton
                 className={classes.icon}
-                href={MAKAN_WEBSITE}
+                href={SAM_WEBSITE}
                 target="_blank"
               >
                 <Web />
@@ -91,7 +80,7 @@ export default function Makan() {
             <Grid item>
               <IconButton
                 className={classes.icon}
-                href={MAKAN_INSTAGRAM}
+                href={SAM_INSTAGRAM}
                 target="_blank"
               >
                 <Instagram />
@@ -100,40 +89,28 @@ export default function Makan() {
             <Grid item>
               <IconButton
                 className={classes.icon}
-                href={MAKAN_SPOTIFY}
+                href={SAM_TWITTER}
                 target="_blank"
               >
-                <SvgIcon className={classes.spotify}>
-                  <Spotify />
-                </SvgIcon>
-              </IconButton>
-            </Grid>
-            <Grid item>
-              <IconButton
-                className={classes.icon}
-                href={MAKAN_SOUNDCOUD}
-                target="_blank"
-              >
-                <SvgIcon className={classes.soundcoud}>
-                  <Soundcloud />
-                </SvgIcon>
+                <Twitter />
               </IconButton>
             </Grid>
           </Grid>
+
           <Grid item>
             <Typography
               color="textPrimary"
               style={{ whiteSpace: "pre-line" }}
               gutterBottom
             >
-              {intl.formatMessage({ id: "makan-des" })}
+              {intl.formatMessage({ id: "roya-des" })}
             </Typography>
           </Grid>
         </Grid>
       </Grid>
 
-      <Grid xs={11} md={6} item>
-        <YouTube videoId="wnlsk39nPCA" />
+      <Grid xs={12} md={6} item>
+        <YouTube videoId="nC8nRGhEUQ0" />
       </Grid>
     </Grid>
   );

@@ -6,6 +6,7 @@ import PersianEmpireCard from "./images/persian.jpg";
 import EmbryoCard from "./images/embryo.jpg";
 import MakanCard from "./images/makan.jpg";
 import PeymanCard from "./images/peyman.jpg";
+import SamCard from "./images/sam.jpg";
 import { useIntl } from "react-intl";
 import { EMBRYO, PERSIAN, ROYA, MAKAN } from "./const/tickets";
 
@@ -66,6 +67,16 @@ export default function Cards() {
           description2={intl.formatMessage({ id: "roya-venue" })}
           linkToTicket={ROYA}
           linkToArtist={"/artists#roya"}
+        />
+      </Grid>
+      <Grid item>
+        <ArtistCard
+          title={intl.formatMessage({ id: "sam" })}
+          image={SamCard}
+          description1={intl.formatMessage({ id: "roya-date" })}
+          description2={intl.formatMessage({ id: "roya-venue" })}
+          linkToTicket={ROYA}
+          linkToArtist={"/artists#sam"}
         />
       </Grid>
       <Grid item>

@@ -66,7 +66,7 @@ export default function Programs() {
         </Grid>
         <Grid item>
           <ProgramCard
-            image={PersianPoster}
+            image={ElectroPoster}
             name={intl.formatMessage({ id: "electro-nacht-names" })}
             time={intl.formatMessage({ id: "persian-time" })}
             date={intl.formatMessage({ id: "persian-date" })}
@@ -130,7 +130,7 @@ export default function Programs() {
         </Grid>
         <Grid item>
           <ProgramCard
-            image={ElectroPoster}
+            image={PersianPoster}
             name={intl.formatMessage({ id: "festival-pass" })}
             time={intl.formatMessage({ id: "festival-pass-time" })}
             date={intl.formatMessage({ id: "festival-pass-date" })}

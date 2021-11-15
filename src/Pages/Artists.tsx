@@ -5,6 +5,7 @@ import Persian from "../artists/Persian";
 import Roya from "../artists/Roya";
 import Makan from "../artists/Makan";
 import Peyman from "../artists/Peyman";
+import Sam from "../artists/Sam";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -13,9 +14,6 @@ const useStyles = makeStyles((theme) => ({
   line: {
     backgroundColor: theme.palette.secondary.main,
     margin: theme.spacing(2),
-  },
-  item: {
-    width: "inherit",
   },
 }));
 
@@ -31,24 +29,28 @@ export default function Artists() {
       justifyContent="flex-start"
       alignItems="flex-start"
     >
-      <Grid className={classes.item} item>
+      <Grid item>
         <Embryo />
         <Divider className={classes.line} />
       </Grid>
-      <Grid className={classes.item} item>
+      <Grid item>
         <Persian />
         <Divider className={classes.line} />
       </Grid>
-      <Grid className={classes.item} item>
+      <Grid item>
+        <Peyman />
+        <Divider className={classes.line} />
+      </Grid>
+      <Grid item>
         <Roya />
         <Divider className={classes.line} />
       </Grid>
-      <Grid className={classes.item} item>
-        <Makan />
+      <Grid item>
+        <Sam />
         <Divider className={classes.line} />
       </Grid>
-      <Grid className={classes.item} item>
-        <Peyman />
+      <Grid item>
+        <Makan />
       </Grid>
     </Grid>
   );
