@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import { useIntl } from "react-intl";
+import { Box } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
   content: {
@@ -22,10 +23,10 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.secondary.main,
     padding: theme.spacing(0, 2),
   },
-  card: {
-    height: theme.spacing(50),
-    [theme.breakpoints.down("md")]: {
-      height: theme.spacing(35),
+  cardMedia: {
+    height: theme.spacing(55),
+    [theme.breakpoints.down("xs")]: {
+      width: theme.spacing(15),
     },
   },
 }));
@@ -51,42 +52,45 @@ export default function ArtistCard({
   const intl = useIntl();
 
   return (
-    <Card sx={{ maxWidth: 400 }} raised={true}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        className={classes.card}
-        image={image}
-      />
-      <CardContent className={classes.content}>
-        <Typography
-          color="text.secondary"
-          gutterBottom
-          variant="h5"
-          component="div"
-        >
-          {title}
-        </Typography>
-        <Typography variant="body2" color="text.disabled">
-          {description1}
-        </Typography>
-        <Typography variant="body2" color="text.disabled">
-          {description2}
-        </Typography>
-      </CardContent>
-      <CardActions className={classes.action}>
-        <Button className={classes.button} size="small" href={linkToArtist}>
-          {intl.formatMessage({ id: "more" })}
-        </Button>
-        <Button
-          className={classes.button}
-          size="small"
-          href={linkToTicket}
-          target="_blank"
-        >
-          {intl.formatMessage({ id: "ticket" })}
-        </Button>
-      </CardActions>
+    <Card sx={{ display: 'flex' }} raised={true}>
+      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+        <CardMedia
+          component="img"
+          alt="green iguana"
+          className={classes.cardMedia}
+          image={image}
+        />
+        <CardContent className={classes.content}>
+          <Typography
+            color="text.secondary"
+            gutterBottom
+            variant="h5"
+            component="div"
+            display="inline"
+          >
+            {title}
+          </Typography>
+          <Typography variant="body2" color="text.disabled">
+            {description1}
+          </Typography>
+          <Typography variant="body2" color="text.disabled">
+            {description2}
+          </Typography>
+        </CardContent>
+        <CardActions className={classes.action}>
+          <Button className={classes.button} size="small" href={linkToArtist}>
+            {intl.formatMessage({ id: "more" })}
+          </Button>
+          <Button
+            className={classes.button}
+            size="small"
+            href={linkToTicket}
+            target="_blank"
+          >
+            {intl.formatMessage({ id: "ticket" })}
+          </Button>
+        </CardActions>
+      </Box>
     </Card>
   );
 }

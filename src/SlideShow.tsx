@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
     height: "35vh",
     width: "100%",
     [theme.breakpoints.down("md")]: {
-      height: "10vh",
-      marginTop: 10,
+      height: "15vh",
+      marginTop: theme.spacing(1),
     },
   },
 }));

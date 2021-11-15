@@ -1,5 +1,5 @@
 import Grid from "@mui/material/Grid";
-import EventCard from "./ArtistCard";
+import ArtistCard from "./ArtistCard";
 import { makeStyles } from "@material-ui/core/styles";
 import RoyaCard from "./images/roya.jpg";
 import PersianEmpireCard from "./images/persian.jpg";
@@ -29,7 +29,7 @@ export default function Cards() {
       className={classes.root}
     >
       <Grid item>
-        <EventCard
+        <ArtistCard
           title={intl.formatMessage({ id: "embryo" })}
           image={EmbryoCard}
           description1={intl.formatMessage({ id: "embryo-date" })}
@@ -39,7 +39,7 @@ export default function Cards() {
         />
       </Grid>
       <Grid item>
-        <EventCard
+        <ArtistCard
           title={intl.formatMessage({ id: "persian-empire" })}
           image={PersianEmpireCard}
           description1={intl.formatMessage({ id: "persian-date" })}
@@ -49,7 +49,7 @@ export default function Cards() {
         />
       </Grid>
       <Grid item>
-        <EventCard
+        <ArtistCard
           title={intl.formatMessage({ id: "peyman" })}
           image={PeymanCard}
           description1={intl.formatMessage({ id: "persian-date" })}
@@ -59,7 +59,7 @@ export default function Cards() {
         />
       </Grid>
       <Grid item>
-        <EventCard
+        <ArtistCard
           title={intl.formatMessage({ id: "roya" })}
           image={RoyaCard}
           description1={intl.formatMessage({ id: "roya-date" })}
@@ -69,7 +69,7 @@ export default function Cards() {
         />
       </Grid>
       <Grid item>
-        <EventCard
+        <ArtistCard
           title={intl.formatMessage({ id: "makan" })}
           image={MakanCard}
           description1={intl.formatMessage({ id: "makan-date" })}
