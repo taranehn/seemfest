@@ -70,6 +70,39 @@ export default function AboutUs() {
           </Grid>
         </Grid>
         <Typography color="textPrimary" gutterBottom>
+          {intl.formatMessage({ id: "festival-des" })}
+        </Typography>
+      </Grid>
+
+      <Grid item>
+        <Grid
+          container
+          direction="row"
+          justifyContent="flex-start"
+          spacing={0}
+          alignItems="center"
+        >
+          <Grid item>
+            <Typography
+              className={classes.title}
+              color="textSecondary"
+              gutterBottom
+              variant="h5"
+            >
+              {intl.formatMessage({ id: "the-seem" })}
+            </Typography>
+          </Grid>
+          <Grid item>
+            <IconButton
+              className={classes.icon}
+              href={SEEM_INSTAGRAM}
+              target="_blank"
+            >
+              <Instagram />
+            </IconButton>
+          </Grid>
+        </Grid>
+        <Typography color="textPrimary" gutterBottom>
           {intl.formatMessage({ id: "seem-des" })}
         </Typography>
       </Grid>
