@@ -52,8 +52,8 @@ export default function ArtistCard({
   const intl = useIntl();
 
   return (
-    <Card sx={{ display: 'flex' }} raised={true}>
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+    <Card sx={{ display: "flex" }} raised={true}>
+      <Box sx={{ display: "flex", flexDirection: "column" }}>
         <CardMedia
           component="img"
           alt="green iguana"

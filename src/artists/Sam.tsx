@@ -1,10 +1,5 @@
 import * as React from "react";
-import {
-  Grid,
-  IconButton,
-  makeStyles,
-  Typography,
-} from "@material-ui/core";
+import { Grid, IconButton, makeStyles, Typography } from "@material-ui/core";
 import { useIntl } from "react-intl";
 import Web from "@mui/icons-material/Web";
 import Twitter from "@mui/icons-material/Twitter";
