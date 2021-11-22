@@ -103,7 +103,7 @@ export default function Sam() {
               style={{ whiteSpace: "pre-line" }}
               gutterBottom
             >
-              {intl.formatMessage({ id: "roya-des" })}
+              {intl.formatMessage({ id: "sam-des" })}
             </Typography>
           </Grid>
         </Grid>
