@@ -1,19 +1,19 @@
 import { Grid, IconButton, SvgIcon, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { useIntl } from "react-intl";
-import { ReactComponent as EinsteinKultur } from "./logos/Einstein-Kultur.svg";
-import { ReactComponent as ImportExport } from "./logos/Import-Export.svg";
-import { ReactComponent as NorouziLaw } from "./logos/Norouzi-Law.svg";
-import { ReactComponent as GoetheInstitut } from "./logos/Goethe-Institut.svg";
-import { ReactComponent as GeniusUnited } from "./logos/Genius-United.svg";
-import { ReactComponent as FeierwerkFunkstation } from "./logos/Feierwerk-Funkstation.svg";
-import { ReactComponent as CinemaIran } from "./logos/Cinema-Iran.svg";
-import { ReactComponent as PatoghStrock } from "./logos/Patogh-Strock.svg";
-import { ReactComponent as AuswaaertigesAmt } from "./logos/Auswaaertiges-Amt.svg";
-import { ReactComponent as MUCCAICON } from "./logos/MUCCA.svg";
-import { ReactComponent as ReplyAG } from "./logos/Reply-AG.svg";
-import { ReactComponent as Shahed } from "./logos/Shahed.svg";
-import { ReactComponent as KulturReferat } from "./logos/Kultur-Referat.svg";
+import { ReactComponent as EinsteinKultur } from "../logos/Einstein-Kultur.svg";
+import { ReactComponent as ImportExport } from "../logos/Import-Export.svg";
+import { ReactComponent as NorouziLaw } from "../logos/Norouzi-Law.svg";
+import { ReactComponent as GoetheInstitut } from "../logos/Goethe-Institut.svg";
+import { ReactComponent as GeniusUnited } from "../logos/Genius-United.svg";
+import { ReactComponent as FeierwerkFunkstation } from "../logos/Feierwerk-Funkstation.svg";
+import { ReactComponent as CinemaIran } from "../logos/Cinema-Iran.svg";
+import { ReactComponent as PatoghStrock } from "../logos/Patogh-Strock.svg";
+import { ReactComponent as AuswaaertigesAmt } from "../logos/Auswaaertiges-Amt.svg";
+import { ReactComponent as MUCCAICON } from "../logos/MUCCA.svg";
+import { ReactComponent as ReplyAG } from "../logos/Reply-AG.svg";
+import { ReactComponent as Shahed } from "../logos/Shahed.svg";
+import { ReactComponent as KulturReferat } from "../logos/Kultur-Referat.svg";
 import {
   MUCCA,
   REPLY,
@@ -28,7 +28,7 @@ import {
   AUSWEARTIGESAMT,
   SHAHED,
   KULTUR,
-} from "./const/sponsers";
+} from "../const/sponsers";
 
 const useStyles = makeStyles((theme) => ({
   icon: {

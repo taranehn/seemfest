@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid";
-import Cards from "../Cards";
-import SlideShow from "../SlideShow";
+import Cards from "../components/Cards";
+import SlideShow from "../components/SlideShow";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({

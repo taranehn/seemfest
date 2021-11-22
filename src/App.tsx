@@ -1,6 +1,6 @@
 import React from "react";
 import TopBar from "./topbar/TopBar";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
 import { Box, createMuiTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { IntlProvider } from "react-intl";
 import translationEN from "./translation/en.json";

@@ -2,10 +2,10 @@ import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { makeStyles } from "@material-ui/core/styles";
 import Slide from "./Slide";
-import EmryoHomePage from "./images/embryo-banner.jpg";
-import RoyaHomePage from "./images/roya-banner.jpg";
-import PEHomePage from "./images/makan-banner.jpg";
-import MakanHomePage from "./images/electro-banner.jpg";
+import EmryoHomePage from "../images/embryo-banner.jpg";
+import RoyaHomePage from "../images/roya-banner.jpg";
+import PEHomePage from "../images/makan-banner.jpg";
+import MakanHomePage from "../images/electro-banner.jpg";
 
 const useStyles = makeStyles((theme) => ({
   carousel: {

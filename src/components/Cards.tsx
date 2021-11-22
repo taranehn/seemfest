@@ -1,15 +1,15 @@
 import Grid from "@mui/material/Grid";
 import ArtistCard from "./ArtistCard";
 import { makeStyles } from "@material-ui/core/styles";
-import RoyaCard from "./images/roya.jpg";
-import PersianEmpireCard from "./images/persian.jpg";
-import EmbryoCard from "./images/embryo.jpg";
-import MakanCard from "./images/makan.jpg";
-import PeymanCard from "./images/peyman.jpg";
-import SamCard from "./images/sam.jpg";
-import RoodyCard from "./images/roody.jpg";
+import RoyaCard from "../images/roya.jpg";
+import PersianEmpireCard from "../images/persian.jpg";
+import EmbryoCard from "../images/embryo.jpg";
+import MakanCard from "../images/makan.jpg";
+import PeymanCard from "../images/peyman.jpg";
+import SamCard from "../images/sam.jpg";
+import RoodyCard from "../images/roody.jpg";
 import { useIntl } from "react-intl";
-import { EMBRYO, PERSIAN, ROYA, MAKAN } from "./const/tickets";
+import { EMBRYO, PERSIAN, ROYA, MAKAN } from "../const/tickets";
 
 const useStyles = makeStyles((theme) => ({
   root: {

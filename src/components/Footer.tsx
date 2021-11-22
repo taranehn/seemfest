@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import { Button, Grid } from "@mui/material";
 import { useIntl } from "react-intl";
-import { PATOGH_WEBSITE } from "./const/links";
+import { PATOGH_WEBSITE } from "../const/links";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({

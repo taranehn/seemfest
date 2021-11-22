@@ -16,6 +16,7 @@ import AccessTime from "@mui/icons-material/AccessTime";
 import Place from "@mui/icons-material/Place";
 import Euro from "@mui/icons-material/Euro";
 import EventAvailable from "@mui/icons-material/EventAvailable";
+import Poster from "./Poster";
 
 const useStyles = makeStyles((theme) => ({
   card: {
@@ -84,15 +85,23 @@ export default function Programs({
   const classes = useStyles();
   const intl = useIntl();
 
+  const [isPosterOpen, setPosterOpen] = React.useState(false);
+
   return (
     <React.Fragment>
+      <Poster isOpen={isPosterOpen} setOpen={setPosterOpen} image={image} />
       <Card
         className={classes.card}
         sx={{ display: "flex" }}
         elevation={0}
         square
       >
-        <CardMedia component="img" className={classes.image} image={image} />
+        <CardMedia
+          component="img"
+          className={classes.image}
+          image={image}
+          onClick={() => setPosterOpen(true)}
+        />
         <Box className={classes.box}>
           <CardContent sx={{ flex: "1 0 auto" }} className={classes.content}>
             <Typography color="text.secondary" component="div" variant="h5">

@@ -12,7 +12,7 @@ import {
   PATOGH_TELEGRAM,
   SEEM_INSTAGRAM,
 } from "../const/links";
-import Sponsers from "../Sponsers";
+import Sponsers from "../components/Sponsers";
 
 const useStyles = makeStyles((theme) => ({
   root: {

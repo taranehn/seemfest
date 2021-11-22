@@ -6,7 +6,7 @@ import MakanPoster from "../images/makan-poster.jpg";
 import ElectroPoster from "../images/electro-poster.jpg";
 import EmbryoPoster from "../images/embryo-poster.jpg";
 import PersianPoster from "../images/persian-poster.jpg";
-import ProgramCard from "../ProgramCard";
+import ProgramCard from "../components/ProgramCard";
 import {
   MUCCA,
   FEIERWEK,
@@ -21,7 +21,7 @@ import {
   MAKAN,
   YALDA,
 } from "../const/tickets";
-import FestivalPass from "../FestivalPass";
+import FestivalPass from "../components/FestivalPass";
 
 const useStyles = makeStyles((theme) => ({
   root: {
