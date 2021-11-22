@@ -45,7 +45,7 @@ export default function Peyman() {
 
   return (
     <Grid
-      id="peyman"
+      id="payman"
       container
       direction="row"
       justifyContent="flex-start"

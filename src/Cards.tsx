@@ -67,7 +67,7 @@ export default function Cards() {
           description1={intl.formatMessage({ id: "persian-date" })}
           description2={intl.formatMessage({ id: "persian-venue" })}
           linkToTicket={PERSIAN}
-          linkToArtist={"/artists#peyman"}
+          linkToArtist={"/artists#payman"}
         />
       </Grid>
       <Grid item>
