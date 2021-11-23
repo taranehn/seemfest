@@ -19,6 +19,7 @@ export default function Routing() {
       <Route exact path="/artists" to="/makan" component={Artists} />
       <Route exact path="/artists" to="/payman" component={Artists} />
       <Route exact path="/artists" to="/sam" component={Artists} />
+      <Route exact path="/artists" to="/roody" component={Artists} />
       <Route exact path="/" component={Home} />
       <Redirect from="/*" to="/" />
     </Switch>

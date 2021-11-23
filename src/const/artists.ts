@@ -21,3 +21,9 @@ export const PEYMAN_INSTAGRAM = "https://www.instagram.com/runningpine/";
 export const PEYMAN_SOUNDCOUD = "https://soundcloud.com/runningpine";
 export const SAM_INSTAGRAM = "https://www.instagram.com/sambeklik/";
 export const SAM_TWITTER = "https://twitter.com/sambeklik";
+export const ROODY_INSTAGRAM = "https://www.instagram.com/rccdy/";
+export const ROODY_YOUTUBE =
+  "https://www.youtube.com/channel/UC4g_m0Btss_RGCZ6HaJVkIg";
+export const ROODY_SPOTIFY =
+  "https://open.spotify.com/artist/7uIAFdTnPBN4PJIPrcwkz3?si=zB8GRvHkSza2KnmOEIbQfg";
+export const ROODY_SOUNDCOUD = "https://soundcloud.com/roodyrapkone";

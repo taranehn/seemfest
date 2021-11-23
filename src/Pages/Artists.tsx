@@ -6,6 +6,7 @@ import Roya from "../artists/Roya";
 import Makan from "../artists/Makan";
 import Peyman from "../artists/Peyman";
 import Sam from "../artists/Sam";
+import Roody from "../artists/Roody";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,6 +36,10 @@ export default function Artists() {
       </Grid>
       <Grid item>
         <Persian />
+        <Divider className={classes.line} />
+      </Grid>
+      <Grid item>
+        <Roody />
         <Divider className={classes.line} />
       </Grid>
       <Grid item>
