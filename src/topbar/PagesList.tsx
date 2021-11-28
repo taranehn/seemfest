@@ -11,6 +11,10 @@ const PagesList = [
     titleId: "about-us",
     link: "/aboutus",
   },
+  {
+    titleId: "support-us",
+    link: "/supportus",
+  },
 ];
 
 export default PagesList;
