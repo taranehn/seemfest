@@ -6,6 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import {
   Button,
+  ButtonBase,
   CardActions,
   IconButton,
   Link,
@@ -53,11 +54,14 @@ const useStyles = makeStyles((theme) => ({
   content: {
     padding: theme.spacing(2),
   },
-  image: {
+  base: {
     width: theme.spacing(20),
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down("sm")]: {
       width: "40vw",
     },
+  },
+  image: {
+    height: "100%",
   },
 }));
 
@@ -96,12 +100,12 @@ export default function Programs({
         elevation={0}
         square
       >
-        <CardMedia
-          component="img"
-          className={classes.image}
-          image={image}
+        <ButtonBase
+          className={classes.base}
           onClick={() => setPosterOpen(true)}
-        />
+        >
+          <CardMedia component="img" className={classes.image} image={image} />
+        </ButtonBase>
         <Box className={classes.box}>
           <CardContent sx={{ flex: "1 0 auto" }} className={classes.content}>
             <Typography color="text.secondary" component="div" variant="h5">

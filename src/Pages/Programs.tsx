@@ -6,6 +6,7 @@ import MakanPoster from "../images/makan-poster.jpg";
 import ElectroPoster from "../images/electro-poster.jpg";
 import EmbryoPoster from "../images/embryo-poster.jpg";
 import PersianPoster from "../images/persian-poster.jpg";
+import YaldaPoster from "../images/yalda-poster.jpg";
 import ProgramCard from "../components/ProgramCard";
 import {
   MUCCA,
@@ -118,7 +119,7 @@ export default function Programs() {
       >
         <Grid item>
           <ProgramCard
-            image={MakanPoster}
+            image={YaldaPoster}
             name={intl.formatMessage({ id: "yalda" })}
             time={intl.formatMessage({ id: "yalda-time" })}
             date={intl.formatMessage({ id: "yalda-date" })}
