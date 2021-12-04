@@ -16,8 +16,7 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(1, 2, 1, 0),
   },
   chart: {
-    padding: theme.spacing(10),
-    margin: theme.spacing(10),
+    margin: theme.spacing(5),
   },
 }));
 
@@ -79,7 +78,7 @@ export default function SupportUs() {
                 {intl.formatMessage({ id: "chart-title" })}
               </Typography>
             </Grid>
-            <Grid item>
+            <Grid className={classes.chart} item>
               <Chart />
             </Grid>
           </Grid>

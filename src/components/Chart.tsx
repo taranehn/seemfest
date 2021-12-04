@@ -1,9 +1,17 @@
 import { Grid, Typography } from "@mui/material";
 import { useIntl } from "react-intl";
 import { PieChart } from "react-minimal-pie-chart";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  chart: {
+    maxWidth: "60%",
+  },
+}));
 
 export default function Chart() {
   const intl = useIntl();
+  const classes = useStyles();
 
   return (
     <Grid
@@ -13,7 +21,7 @@ export default function Chart() {
       spacing={8}
       alignItems="center"
     >
-      <Grid item>
+      <Grid className={classes.chart} item>
         <PieChart
           label={({ x, y, dx, dy, dataEntry }) => (
             <text
@@ -33,22 +41,27 @@ export default function Chart() {
             {
               color: "#C13C37",
               title: "B",
-              value: 9,
+              value: 8,
             },
             {
               color: "#6A2135",
               title: "C",
-              value: 15,
+              value: 14,
+            },
+            {
+              color: "#E38627",
+              title: "E",
+              value: 11,
             },
             {
               color: "#91372f",
               title: "D",
-              value: 20,
+              value: 19,
             },
             {
               color: "#E38627",
               title: "A",
-              value: 54,
+              value: 48,
             },
           ]}
           labelPosition={70}
@@ -89,6 +102,13 @@ export default function Chart() {
           gutterBottom
         >
           D: {intl.formatMessage({ id: "self-funding" })}
+        </Typography>
+        <Typography
+          color="textPrimary"
+          style={{ whiteSpace: "pre-line", color: "#E38627" }}
+          gutterBottom
+        >
+          E: {intl.formatMessage({ id: "tickets" })}
         </Typography>
       </Grid>
     </Grid>
