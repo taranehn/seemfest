@@ -7,4 +7,5 @@ export const ROYA =
 export const MAKAN =
   "https://www.eventbrite.de/e/makan-ashgvari-seem-festival-tickets-201514734997";
 export const FESTIVALPASS = "https://seemfest.de/programs#festivalpass";
-export const YALDA = "https://goo.gl/maps/9vnUyjJKdkfAwwoJ7";
+export const YALDA =
+  "https://www.eventbrite.com/e/yalda-nacht-seem-festival-tickets-229757840887?aff=erelexpmlt";
