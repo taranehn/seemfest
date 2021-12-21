@@ -6,7 +6,7 @@ import MakanPoster from "../images/makan-poster.jpg";
 import ElectroPoster from "../images/electro-poster.jpg";
 import EmbryoPoster from "../images/embryo-poster.jpg";
 import PersianPoster from "../images/persian-poster.jpg";
-import YaldaPoster from "../images/yalda-poster.jpg";
+import YaldaPoster from "../images/yalda-poster.jpeg";
 import ProgramCard from "../components/ProgramCard";
 import {
   MUCCA,
