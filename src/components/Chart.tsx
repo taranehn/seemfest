@@ -39,29 +39,29 @@ export default function Chart() {
           center={[50, 50]}
           data={[
             {
-              color: "#C13C37",
+              color: "#DD5613",
               title: "B",
-              value: 8,
+              value: 6,
             },
             {
-              color: "#6A2135",
+              color: "#FFA500",
               title: "C",
-              value: 14,
+              value: 32,
             },
             {
-              color: "#E38627",
-              title: "E",
-              value: 11,
-            },
-            {
-              color: "#91372f",
+              color: "#DD5613",
               title: "D",
-              value: 19,
+              value: 12,
             },
+            /*            {
+                         color: "#E38627",
+                         title: "E",
+                         value: 0,
+                       }, */
             {
-              color: "#E38627",
+              color: "#FFA500",
               title: "A",
-              value: 48,
+              value: 50,
             },
           ]}
           labelPosition={70}
@@ -77,38 +77,38 @@ export default function Chart() {
       <Grid item>
         <Typography
           color="textPrimary"
-          style={{ whiteSpace: "pre-line", color: "#E38627" }}
+          style={{ whiteSpace: "pre-line", color: "#FFA500" }}
           gutterBottom
         >
           A: {intl.formatMessage({ id: "grant" })}
         </Typography>
         <Typography
           color="textPrimary"
-          style={{ whiteSpace: "pre-line", color: "#C13C37" }}
+          style={{ whiteSpace: "pre-line", color: "#DD5613" }}
           gutterBottom
         >
           B: {intl.formatMessage({ id: "donation" })}
         </Typography>
         <Typography
           color="textPrimary"
-          style={{ whiteSpace: "pre-line", color: "#6A2135" }}
+          style={{ whiteSpace: "pre-line", color: "#FFA500" }}
           gutterBottom
         >
           C: {intl.formatMessage({ id: "sponsorship" })}
         </Typography>
-        <Typography
+        {/*         <Typography
           color="textPrimary"
-          style={{ whiteSpace: "pre-line", color: "#91372f" }}
+          style={{ whiteSpace: "pre-line", color: "#FFBF00" }}
           gutterBottom
         >
-          D: {intl.formatMessage({ id: "self-funding" })}
-        </Typography>
+          E: {intl.formatMessage({ id: "self-funding" })}
+        </Typography> */}
         <Typography
           color="textPrimary"
-          style={{ whiteSpace: "pre-line", color: "#E38627" }}
+          style={{ whiteSpace: "pre-line", color: "#DD5613" }}
           gutterBottom
         >
-          E: {intl.formatMessage({ id: "tickets" })}
+          D: {intl.formatMessage({ id: "tickets" })}
         </Typography>
       </Grid>
     </Grid>
